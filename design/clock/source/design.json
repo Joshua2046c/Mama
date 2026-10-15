@@ -203,7 +203,7 @@
       "label": "White raised ticks",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "8250b459ebcb69d9ec60b32a27ed342c6cc5198eac936f7ee0478b6d7b1e2099",
+      "shapeHash": "81139b28186077680a67aa3598e99fadea501be5902b6730758cd96ca1dbde51",
       "transform": {
         "positionMm": [
           0,
@@ -230,7 +230,7 @@
       "label": "Reference traced numerals",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "58620432062713b3ca37c7c550b82a5c0c6b05829b4c939cae944974ca5f62d4",
+      "shapeHash": "d602513a95ecb96ec9211a53f858e6757512970b823722a8aa21758f1a4429f0",
       "transform": {
         "positionMm": [
           0,
@@ -254,7 +254,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-29T14:20:54.501Z",
+  "updatedAt": "2026-10-15T11:41:02.627Z",
   "parameters": {
     "base": {
       "base_width": 84,

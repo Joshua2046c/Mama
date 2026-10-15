@@ -2,20 +2,20 @@
   "designId": "clock",
   "revision": "b11b27b63208705810234917e75886d59feb66282a36b976f4d0eec23fc23f19",
   "schemaVersion": 2,
-  "exportId": "export-fe7c0c097382e9653f172104423d2a58",
-  "generatedAt": "2026-09-29T14:20:54.501Z",
-  "designSha256": "de877b9e37aaecc239086c50534fc9bfbd7e4e13d020ea840d3041b61bebebfa",
+  "exportId": "export-1650e7604266732d0e5e82be5de0ebfd",
+  "generatedAt": "2026-10-15T11:41:02.627Z",
+  "designSha256": "089833d74d701c4e01d62a2d58854b9a754dcbe3d9282b3ce09c3e69368b77ac",
   "role": "clock",
-  "stateHash": "e61ebce6faed453db0f0740066a95520277eecf8c7a464650f186c5c35368378",
+  "stateHash": "5df3747e680b548e18d48439e9107c3886f2eeb6842c3f547f7d0b3316923630",
   "stateManifest": {
     "schemaVersion": 3,
     "designId": "clock",
     "role": "clock",
     "design": {
       "revision": "b11b27b63208705810234917e75886d59feb66282a36b976f4d0eec23fc23f19",
-      "designSha256": "6064322cc27f1fb62c9f8650ef4ad1bf9269ac5e1d78f09440f1ffc726d99ee0",
-      "manifestSha256": "a4a5e65b00072bce9af5aab9e6ecd07f1f4d1f1086b8ce7612dcbc6ad74743eb",
-      "stepSha256": "91dd038c430a756e997214daae81c4e120ed4dedd7162539cb8ef465365d0d2e",
+      "designSha256": "7c29c5a9a664453a2e7272daada988abf86167e4d09ee47b84696c27c782807e",
+      "manifestSha256": "179e40b1f967f7e03fd8f345bd67c370a7614d9c02c1e2c8f986d45d0488a6b6",
+      "stepSha256": "bf1ed3c039a49dc98f343607671fa76a1098af7043a3dc73fb2a8cd09261fe1e",
       "pcbReleases": []
     },
     "brief": {
@@ -34,15 +34,15 @@
         "step"
       ]
     },
-    "stateHash": "e61ebce6faed453db0f0740066a95520277eecf8c7a464650f186c5c35368378"
+    "stateHash": "5df3747e680b548e18d48439e9107c3886f2eeb6842c3f547f7d0b3316923630"
   },
   "buildArtifacts": {
-    "manifestSha256": "a4a5e65b00072bce9af5aab9e6ecd07f1f4d1f1086b8ce7612dcbc6ad74743eb",
-    "stepSha256": "91dd038c430a756e997214daae81c4e120ed4dedd7162539cb8ef465365d0d2e"
+    "manifestSha256": "179e40b1f967f7e03fd8f345bd67c370a7614d9c02c1e2c8f986d45d0488a6b6",
+    "stepSha256": "bf1ed3c039a49dc98f343607671fa76a1098af7043a3dc73fb2a8cd09261fe1e"
   },
   "exportAlgorithm": {
     "version": 1,
-    "bootstrapSha256": "f4939328ef685300fcdaa250c860428f6b9e009d10931b20d36728e55e0029e4"
+    "bootstrapSha256": "6b3e2fc248625efd99ce6e9a42bf9d57effe0be0029fc3c36a211a4508d8fab6"
   },
   "sourceHashes": {
     "base/main": "febbd9738f1497dab3cd915a84fb810eebefa6603c8889b70b5fe9498d7ba4ad",
@@ -58,35 +58,35 @@
     "body": "a679a1e15ba4cb691ff33c1d67bcf501ce74fb6c7aa7877b69e3a57704731f1e",
     "dial": "ffef53f87f1ece5630d5a66cfb79c74cccc6a2bcdf589070bbc8827a62ceef39",
     "locator": "c359ab7043e56480e1748d34b1f8cd1688f46d008dfa0c51c1d53bbf652fac53",
-    "markings": "8250b459ebcb69d9ec60b32a27ed342c6cc5198eac936f7ee0478b6d7b1e2099",
-    "numerals": "58620432062713b3ca37c7c550b82a5c0c6b05829b4c939cae944974ca5f62d4"
+    "markings": "81139b28186077680a67aa3598e99fadea501be5902b6730758cd96ca1dbde51",
+    "numerals": "d602513a95ecb96ec9211a53f858e6757512970b823722a8aa21758f1a4429f0"
   },
   "runtime": {
-    "manifestHash": "56a1de5d760e9f5c1dd991c57c86f24fbfb7da361b3d55b9d4cb65cdabe66a74",
+    "manifestHash": "b5f5c3cc7fb8830bc9254702e9a16753da94c9cc6eb4da520a607191f038e0eb",
     "pythonVersion": "3.12.13",
     "build123dVersion": "0.10.0",
     "ocpVersion": "7.8.1.1.post1",
-    "cadpyHash": "e8b3788bab31d790595e4c3306dda85dfe057c87a4fc64f7ef3eab254239b7ba"
+    "cadpyHash": "81911f3a8adaeb8d0c4be9c12da56f8c18df074c4680646de6b0a4fe8457a5cc"
   },
   "artifacts": [
     {
-      "path": "manufacturing/clock/releases/export-fe7c0c097382e9653f172104423d2a58/model.step",
+      "path": "manufacturing/clock/releases/export-1650e7604266732d0e5e82be5de0ebfd/model.step",
       "role": "model/step",
-      "sha256": "91dd038c430a756e997214daae81c4e120ed4dedd7162539cb8ef465365d0d2e",
-      "sizeBytes": 12718854
+      "sha256": "bf1ed3c039a49dc98f343607671fa76a1098af7043a3dc73fb2a8cd09261fe1e",
+      "sizeBytes": 12728229
     }
   ],
   "interference": {
-    "summary": "0 interfering pairs, 5 undetermined",
+    "summary": "0 interfering pairs, 4 undetermined",
     "counts": {
       "objects": 6,
       "pairs": 15,
-      "exact": 2,
-      "cached": 3,
+      "exact": 1,
+      "cached": 5,
       "interference": 0,
       "undeclared": 0,
       "over_budget": 0,
-      "undetermined": 5
+      "undetermined": 4
     },
     "overlaps": []
   },
@@ -95,9 +95,9 @@
     "algorithm": "hmac-sha256",
     "keyId": "208b76e9a2655818165e77ecb9e93644",
     "projectId": "60b84c38-422d-4b10-9988-4fe3fe272030",
-    "receiptPath": "manufacturing/clock/releases/export-fe7c0c097382e9653f172104423d2a58/receipt.json",
-    "payloadSha256": "563a2c7b44368237faed23bd8ce4c3650b2985266e9e8730dca3736d72e1c292",
-    "mac": "02395e41ad6fdd8b9295c727c728e07c3434b6d58032a27c40b076bb98ebae9f"
+    "receiptPath": "manufacturing/clock/releases/export-1650e7604266732d0e5e82be5de0ebfd/receipt.json",
+    "payloadSha256": "1cc653a1fb056de92620cba8a118b6a68241f754d1446927f4dc22c046f8dc36",
+    "mac": "8de13dec91500e3ae9055309b5665c9b825690d17f39db433446ea8b3427c734"
   },
   "status": "handoff"
 }
