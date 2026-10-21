@@ -2,19 +2,19 @@
   "version": 2,
   "artifact_level": "assembly",
   "deliverable_intent": "printable_part",
-  "summary": "Storage clock: three main pieces plus a separate small glue locator",
+  "summary": "Storage clock with independent bonded slides, single-pair magnetic rear cover and rectangular lower finger notch",
   "required_interfaces": [
     {
-      "id": "tenon",
+      "id": "slide_mount",
       "kind": "mechanical_joint",
-      "description": "Separate small square locator between blind recesses, adhesive bond",
+      "description": "左右同结构的独立粘合T形滑轨，背面0.1 mm定位浅槽，滑动间隙至少0.1 mm；底座槽底无局部凹坑，两侧下端外缘封闭；装到底后顶部齐平。 两侧槽口至外缘及下部圆角至少2 mm壁厚，中间连接面无大块方形凹陷。 背板定位浅槽下端圆角匹配滑轨底板轮廓并保留定位间隙。",
       "source": "user_requested",
       "required": true
     },
     {
       "id": "dial_nest",
       "kind": "internal_fit",
-      "description": "微翘边盘面嵌入钟体",
+      "description": "微翘边盘面嵌入钟体；壳内环形承托台阶下方垂直填实到背板，取消悬空薄台阶。 盘面背面12/3/6/9点各一孔Ø7.1×深1.1 mm，与钟壳四个磁铁位对应；四对磁铁用于盘面拆装。",
       "source": "user_requested",
       "required": true
     },
@@ -22,6 +22,20 @@
       "id": "movement",
       "kind": "internal_fit",
       "description": "通用石英钟芯空间及轴孔",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "battery_hatch",
+      "kind": "mechanical_joint",
+      "description": "中央58x58 mm R3磁吸可拆盖，上缘居中一对磁铁位，壳体与盖子各一孔Ø7.26x1.26 mm；下缘15x2 mm长方形扣手槽，取消壳体外侧半圆凹陷 磁铁座内侧与背板内部表面齐平，机芯腔净深至少17 mm。",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "wall_hanger",
+      "kind": "mechanical_joint",
+      "description": "背面居中上方钥匙孔挂钉槽，内侧周围设圆角矩形凹位，凹深为实际背板厚度的一半。",
       "source": "user_requested",
       "required": true
     }
@@ -35,8 +49,8 @@
     }
   ],
   "assembly_story": {
-    "installation": "Dry-fit the separate locator, bond it in the base and body blind recesses, cure while supported, then install movement and removable dial",
-    "maintenance": "Remove the nested dial with its attached movement from the front to replace the AA battery; rear face is completely closed.",
+    "installation": "Bond separate sliders into rear locating recesses; fit one opposing magnet pair in the upper-center shell and cover pockets, install movement and dial, slide clock down into base until tops are flush.",
+    "maintenance": "Remove clock from base and lift cover using its lower rectangular notch; display arrangement stands base upright in the design frame beside the unchanged shell and dial.",
     "user_access": [
       "顶部收纳口",
       "钟芯电池"
@@ -48,15 +62,17 @@
       {
         "role": "clock",
         "design_id": "clock",
-        "description": "Storage clock with projecting neck base and separate glue locator",
+        "description": "Storage clock with independent bonded slides, single-pair magnetic rear cover and rectangular lower finger notch",
         "delivery_target": "printable_part",
         "required_formats": [
           "step"
         ],
         "interface_ids": [
-          "tenon",
+          "slide_mount",
           "dial_nest",
-          "movement"
+          "movement",
+          "battery_hatch",
+          "wall_hanger"
         ],
         "reference_ids": [
           "reference_images"

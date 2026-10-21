@@ -7,14 +7,16 @@
     "parts": {
       "value": [
         "顶部收纳底座",
-        "加厚钟主体",
-        "嵌套盘面",
-        "Separate small square locator for adhesive assembly"
+        "带挂孔及磁铁位的钟壳",
+        "数字刻度融合的一体盘面",
+        "可拆磁吸电池盖",
+        "独立左滑轨",
+        "独立右滑轨"
       ],
       "source": "user"
     },
     "base_joint": {
-      "value": "Small separate square locator; shallow blind recess in clock body; adhesive assembly",
+      "value": "钟体从上向下滑入底座的双T形滑槽卡接；两条钟背滑轨为独立分件，以粘合方式固定在背面浅定位槽内。",
       "source": "user"
     },
     "dial_shape": {
@@ -51,8 +53,8 @@
     },
     "base_size_mm": {
       "value": [
-        84,
-        103.15,
+        90,
+        117.96,
         160
       ],
       "source": "default"
@@ -78,7 +80,7 @@
       "source": "default"
     },
     "movement_concealment": {
-      "value": "Movement fully concealed inside closed body; no rear service opening. Remove nested dial for access.",
+      "value": "机芯藏在壳体内，中央磁吸可拆电池盖提供背面维护入口。",
       "source": "user"
     },
     "appearance_refinement": {
@@ -91,42 +93,18 @@
     },
     "base_footprint_mm": {
       "value": [
-        84,
-        92
+        90,
+        110
       ],
       "source": "default"
     },
     "concealed_tangent_joint": {
-      "value": "Increase backward tilt; clock body meets the base tangentially, with the square connection fully concealed.",
+      "value": "钟体保持后仰，与底座连接处隐藏滑槽，保留伸颈端部直角收头。",
       "source": "user"
     },
     "base_profile": {
       "value": "Forward-projecting neck with a rounded concave root; the end adjoining the clock back is a sharp right-angle connection without an arc transition; rear may taper inward slightly",
       "source": "user"
-    },
-    "locator_size_mm": {
-      "value": [
-        12,
-        12,
-        5
-      ],
-      "source": "default"
-    },
-    "body_locator_recess_mm": {
-      "value": [
-        12.5,
-        12.5,
-        1.2
-      ],
-      "source": "default"
-    },
-    "base_locator_recess_mm": {
-      "value": [
-        12.5,
-        12.5,
-        4.2
-      ],
-      "source": "default"
     },
     "base_rear_inset_mm": {
       "value": 8,
@@ -199,6 +177,213 @@
     "base_neck_end_flat_length_mm": {
       "value": 20,
       "source": "default"
+    },
+    "dial_component_structure": {
+      "value": "盘面、数字和刻度必须实体融合为一个连续实体，不能作为独立零件移动；保留原图字形、60个凸起刻度和0.6 mm浮雕高度。",
+      "source": "user"
+    },
+    "slide_minimum_clearance_mm": {
+      "value": 0.1,
+      "source": "user"
+    },
+    "slide_clearance_per_face_mm": {
+      "value": 0.25,
+      "source": "default"
+    },
+    "battery_hatch_outline_mm": {
+      "value": {
+        "width": 58,
+        "height": 58,
+        "corner_radius": 3
+      },
+      "source": "user"
+    },
+    "battery_hatch_mechanism": {
+      "value": "钟背中央磁吸可拆盖，上缘中央仅一对磁铁位，孔径7.26 mm、深1.26 mm；壳体下方取消半圆凹陷，盖子下缘改长方形扣手槽。",
+      "source": "user"
+    },
+    "battery_hatch_service": {
+      "value": "更换电池先从底座向上滑出钟体，再取下磁吸盖；无需避让底座的开盖运动空间。",
+      "source": "user"
+    },
+    "rear_hanger": {
+      "value": "钟背居中上方，参照用户照片的大入口、上窄颈钥匙孔挂钉槽。",
+      "source": "user"
+    },
+    "rear_hanger_default_mm": {
+      "value": {
+        "entry_diameter": 9,
+        "stem_width": 3.8,
+        "stem_rise": 10,
+        "entry_center_above_clock_center": 86
+      },
+      "source": "default"
+    },
+    "internal_depth_minimum_mm": {
+      "value": 17,
+      "source": "user"
+    },
+    "internal_depth_interpretation": {
+      "value": "机芯腔内部净深至少17 mm。",
+      "source": "user"
+    },
+    "rail_bond_recess_depth_mm": {
+      "value": 0.1,
+      "source": "user"
+    },
+    "slide_top_alignment": {
+      "value": "滑轨延长，钟体滑到底后，滑轨顶面与底座顶面齐平。",
+      "source": "user"
+    },
+    "cover_magnet_size_mm": {
+      "value": {
+        "diameter": 7,
+        "thickness": 1
+      },
+      "source": "user"
+    },
+    "cover_magnet_pairs": {
+      "value": 1,
+      "source": "user"
+    },
+    "actual_minimum_internal_depth_mm": {
+      "value": 20.4,
+      "source": "default"
+    },
+    "display_layout": {
+      "value": "底座在钟体旁边沿设计模型Z方向竖直立放，底面Z=0；表盘和表壳位置不变。",
+      "source": "user"
+    },
+    "rail_top_y_mm": {
+      "value": -8.322395486893,
+      "source": "default"
+    },
+    "cover_magnet_location": {
+      "value": "盖子上缘居中，表壳和盖子各一个，对应标记约(0,23) mm。",
+      "source": "user"
+    },
+    "cover_magnet_pocket_mm": {
+      "value": {
+        "diameter": 7.26,
+        "depth": 1.26
+      },
+      "source": "user"
+    },
+    "body_lower_semicircular_recess": {
+      "value": false,
+      "source": "user"
+    },
+    "cover_finger_notch": {
+      "value": "长方形扣手槽，高度与原半圆一致，长度等于三个原半圆。",
+      "source": "user"
+    },
+    "cover_finger_notch_mm": {
+      "value": {
+        "width": 15,
+        "inset_height": 2
+      },
+      "source": "default"
+    },
+    "slide_profile_symmetry": {
+      "value": "左右两条独立滑轨结构相同，以原无弹臂的右侧T形滑轨为准；取消左轨弹臂及底座对应凹坑。",
+      "source": "user"
+    },
+    "base_slot_ends": {
+      "value": "底座两边滑槽下端外缘连续封闭，不留小缺口；槽底不留局部止退凹陷。",
+      "source": "user"
+    },
+    "base_slot_outer_wall_minimum_mm": {
+      "value": 2,
+      "source": "user"
+    },
+    "base_front_recess": {
+      "value": "取消两条滑槽之间的大块方形凹陷，恢复连续平面。",
+      "source": "user"
+    },
+    "rail_locating_recess_corner_match": {
+      "value": "背板0.1 mm定位浅槽的下端轮廓及圆角与滑轨底板一致，保留定位旷量。",
+      "source": "user"
+    },
+    "magnet_support_inner_flush": {
+      "value": "表壳磁铁座朝机芯腔一侧与背板内表面齐平，不向腔内凸出。",
+      "source": "user"
+    },
+    "base_lower_forward_extension": {
+      "value": "底座下半部向前延伸，按标注连接到原颈根内凹轮廓。",
+      "source": "user"
+    },
+    "body_back_thickness_mm": {
+      "value": 5.6,
+      "source": "default"
+    },
+    "rail_locating_corner_radius_mm": {
+      "value": 2.1,
+      "source": "default"
+    },
+    "base_front_foot_extension_mm": {
+      "value": 28,
+      "source": "default"
+    },
+    "dial_seat_support": {
+      "value": "表壳内部环形盘面台阶下方沿钟轴方向填实，连续连接至表壳底部，取消悬空的环形薄台阶。",
+      "source": "user"
+    },
+    "hanger_inner_recess": {
+      "value": "挂钉钥匙孔内侧周围做圆角矩形下凹，深度为表壳底部背板厚度的一半。",
+      "source": "user"
+    },
+    "hanger_recess_depth_fraction": {
+      "value": 0.5,
+      "source": "user"
+    },
+    "hanger_recess_outline_mm": {
+      "value": {
+        "width": 16,
+        "height": 26,
+        "corner_radius": 3
+      },
+      "source": "default"
+    },
+    "hanger_recess_depth_mm": {
+      "value": 2.8,
+      "source": "default"
+    },
+    "magnet_pocket_increment_mm": {
+      "value": {
+        "diameter": 0.16,
+        "depth": 0.16
+      },
+      "source": "user"
+    },
+    "dial_magnetic_mount": {
+      "value": {
+        "clock_positions": [
+          12,
+          3,
+          6,
+          9
+        ],
+        "pocket_diameter": 7.1,
+        "pocket_depth": 1.1,
+        "matching_shell_pockets": true
+      },
+      "source": "user"
+    },
+    "dial_magnet_radius_mm": {
+      "value": 111,
+      "source": "user"
+    },
+    "dial_magnet_pairs": {
+      "value": 4,
+      "source": "default"
+    },
+    "dial_magnet_seat_wall_mm": {
+      "value": 2,
+      "source": "default"
+    },
+    "dial_magnet_inward_shift_mm": {
+      "value": 1.5,
+      "source": "user"
     }
   },
   "open_questions": []

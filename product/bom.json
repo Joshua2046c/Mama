@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "ab57dc104b1631fb52611c3e29d10695ab765c67a0435eda82ff66e0e0b0a445",
+  "requirements_digest": "52deedaa6f4cdf2a1b3621132acd91ff2c392b5d268241e298075613d0b3dccd",
   "items": [
     {
       "id": "movement",
@@ -12,24 +12,24 @@
       "source": "default",
       "product_url": "https://www.m-p.co.uk/muk/parts/movements-quartz.htm",
       "procurement_status": "external_procurement_required",
-      "description": "User shaft length 14 mm; reference housing envelope 56 x 56 x 17 mm. Selected design cavity 64 x 64 x 22.5 mm. Supplied washer and shaft nut retain 2.4 mm dial. Thread length and hand press-fit sizes need physical fit check.",
+      "description": "User shaft length 14 mm; reference housing envelope 56 x 56 x 17 mm. Selected design cavity 64 x 64 x 20.4 mm. Supplied washer and shaft nut retain 2.4 mm dial. Thread length and hand press-fit sizes need physical fit check.",
       "part_identity": "709e80c88487a241"
     },
     {
       "id": "base",
-      "name": "Custom storage base with projecting neck, 20 mm straight underside meeting the clock contact face at 90 degrees, and rounded concave root; 84 x 103.15 x 160 mm envelope, 12.5 mm square glue recess 4.2 mm deep; storage depth 125 mm, floor 35 mm above the foot",
+      "name": "Custom PETG upright storage base, 90 mm wide, front foot extension 28 mm, footprint 90 x 110 mm; symmetric captured T grooves with at least 2 mm outside/corner walls; continuous flat central contact face",
       "quantity": 1,
       "source": "default"
     },
     {
       "id": "body",
-      "name": "Custom closed-back clock body, 240 mm diameter, 32 mm deep, 16 degree tilt; tangent rear R7 and front R1 rounds, inner lip R0.8; 12.5 mm square blind glue recess 1.2 mm deep",
+      "name": "Custom PETG clock shell, diameter 240 x 32 mm, 5.6 mm backplate coplanar with internal magnet support; two 0.1 mm rail locating recesses with R2.1 lower corners matching R2 rail pads plus 0.1 mm locating gap; keyhole hanger, 58 mm R3 cover seat; one upper-center magnet pocket diameter 7.26 x depth 1.26 mm; net movement depth 20.4 mm; fully supported annular dial seat from backplate to seat top; internal keyhole surround recess 16 x 26 mm R3, 2.8 mm deep into 5.6 mm backplate; four integral front-dial magnet seats at 12/3/6/9, radius 111 mm, each pocket diameter 7.1 x depth 1.1 mm",
       "quantity": 1,
       "source": "default"
     },
     {
       "id": "dial",
-      "name": "Custom nested flat-center dial, rounded outer lip R1 and rear edge R0.5, with white 0.6 mm raised hour blocks, minute ticks and numerals 1-12",
+      "name": "Custom nested one-piece dial: one continuous solid including reference-traced numerals 1-12 and 60 integral raised ticks, relief 0.6 mm; outer lip R1 and rear edge R0.5; four back-facing magnet pockets diameter 7.1 x depth 1.1 mm at 12/3/6/9, radius 111 mm, aligned with shell seats",
       "quantity": 1,
       "source": "default"
     },
@@ -48,30 +48,50 @@
       "procurement_status": "external_procurement_required"
     },
     {
-      "id": "dial_tape",
-      "name": "Removable 0.2 mm double-sided adhesive pads; replace pads when dial is removed for battery service",
+      "id": "white_finish",
+      "name": "White model paint for finishing the integral raised numerals and ticks on the one-piece dial",
       "quantity": 1,
       "source": "default",
       "procurement_status": "external_procurement_required"
     },
     {
-      "id": "locator",
-      "name": "Custom separate square locating block, 12 x 12 x 5 mm, 0.2 mm edge chamfer",
+      "id": "battery_cover",
+      "name": "Custom PETG magnetic cover, 58 x 58 mm R3, 2.2 mm thick, one upper-centered magnet pocket diameter 7.26 x depth 1.26 mm and 15 x 2 mm lower rectangular finger notch",
       "quantity": 1,
       "source": "default"
     },
     {
-      "id": "joint_adhesive",
-      "name": "User-supplied adhesive suitable for the selected printed material; 0.2 mm glue beds in locator recesses",
+      "id": "rail_left",
+      "name": "Custom separate PETG bonded T slider, same geometry on both sides, no flexible arm or detent; sloped top flush with base when seated, approximately 38.68 mm length at rear-face plane",
+      "quantity": 1,
+      "source": "default"
+    },
+    {
+      "id": "rail_right",
+      "name": "Custom separate PETG bonded T slider, same geometry on both sides, no flexible arm or detent; sloped top flush with base when seated, approximately 38.68 mm length at rear-face plane",
+      "quantity": 1,
+      "source": "default"
+    },
+    {
+      "id": "cover_magnets",
+      "name": "User-specified round disc magnets, diameter 7 mm x thickness 1 mm; one opposing pair, grade unspecified",
+      "quantity": 2,
+      "source": "user",
+      "procurement_status": "external_procurement_required"
+    },
+    {
+      "id": "rail_adhesive",
+      "name": "User-selected adhesive suitable for PETG rail bonds and all magnet pockets; check magnet polarity before bonding",
       "quantity": 1,
       "source": "user",
       "procurement_status": "external_procurement_required"
     },
     {
-      "id": "white_markings",
-      "name": "White PETG relief regions: 12 hour blocks, 48 minute lines and reference-traced numerals 1-12, nominal numeral height 25 mm, relief 0.6 mm",
-      "quantity": 1,
-      "source": "default"
+      "id": "dial_magnets",
+      "name": "Round disc magnets, diameter 7 mm x thickness 1 mm, four opposing pairs for the removable front dial; grade unspecified",
+      "quantity": 8,
+      "source": "default",
+      "procurement_status": "external_procurement_required"
     }
   ],
   "unresolved_items": [],

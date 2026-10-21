@@ -17,11 +17,11 @@
     "design_clear_cavity": [
       64,
       64,
-      22.5
+      20.4
     ],
     "design_dial_thickness": 2.4,
     "mounting": "Use supplied movement nut and washer; no screws into printed plastic",
-    "service": "Remove nested dial and movement together from the front; fully closed rear face",
+    "service": "Slide clock off base, lift magnetic cover using lower finger notch, replace battery; no hinge.",
     "limitations": "This envelope is a selected common class, not every movement sold as universal. No vendor STEP found.",
     "user_total_shaft_length_mm": 14
   },
@@ -33,26 +33,6 @@
     "value": 0.25,
     "source": "default"
   },
-  "adhesive_locator": {
-    "locator_size": [
-      12,
-      12,
-      5
-    ],
-    "body_recess": [
-      12.5,
-      12.5,
-      1.2
-    ],
-    "base_recess": [
-      12.5,
-      12.5,
-      4.2
-    ],
-    "glue_bed_each_end": 0.2,
-    "remaining_body_back_wall": 2.3,
-    "bonding": "User-supplied glue; dry-fit first and support assembly until cured; strength not physically tested"
-  },
   "dial_relief": {
     "height": 0.6,
     "tick_radius": 101,
@@ -61,7 +41,8 @@
     "numeral_height": 25,
     "minimum_hand_underside_above_dial": 1.1,
     "clearance_status": "Assembly target only; verify with actual movement and hands",
-    "numeral_style": "Outlines traced directly from supplied image; one uniform image scale of 25 mm per 180 px preserves per-label proportions"
+    "numeral_style": "Outlines traced directly from supplied image; one uniform image scale of 25 mm per 180 px preserves per-label proportions",
+    "component_structure": "One watertight solid with no assembly children; integral relief rises from the 2.4 mm flat dial to 3.0 mm. White relief finish is applied by painting after printing, or by surface painting in a compatible slicer."
   },
   "rounded_edges": {
     "body_rear_radius": 7,
@@ -71,5 +52,149 @@
     "dial_back_edge_radius": 0.5,
     "source": "default",
     "intent": "User requested smoothly rounded dial and body edges; central sweep plane and nesting seat are retained."
+  },
+  "sliding_joint": {
+    "implementation": "free: twin captured T rails and top-open female base slots",
+    "user_minimum_gap": 0.1,
+    "nominal_clearance_per_face": 0.25,
+    "direction": "clock local -Y for insertion, +Y for removal",
+    "stem_width": 4.5,
+    "head_width": 8,
+    "projection": 5,
+    "length": 38.677604513107,
+    "centers_x": [
+      -35,
+      35
+    ],
+    "retention": "Identical captured T profiles and lower travel stops on both sides; no elastic detent or local socket.",
+    "top_y": -8.322395486893,
+    "separate_bonded_rails": true,
+    "rear_bonding_recess_depth": 0.1,
+    "glue_bed": 0.05,
+    "bond_pad_width": 10,
+    "flush_top_when_fully_seated": true,
+    "bond_pad_lower_corner_radius": 2.0,
+    "receiver_pad_corner_radius": 2.25,
+    "receiver_pad_end_clearance": 0.25,
+    "outer_base_corner_radius_preserved": 18,
+    "minimum_outer_corner_wall": 2,
+    "central_face_recess": false,
+    "base_width": 90,
+    "rear_locating_lower_corner_radius": 2.1,
+    "rear_locating_corner_match": "R2 rail corner offset outward by 0.1 mm locating clearance"
+  },
+  "rear_service": {
+    "cover_outline": [
+      58,
+      58
+    ],
+    "corner_radius": 3,
+    "plate_thickness": 2.2,
+    "perimeter_gap": 0.3,
+    "minimum_movement_depth": 17,
+    "actual_minimum_movement_depth": 20.4,
+    "magnet_size": [
+      7,
+      1
+    ],
+    "magnet_pocket": [
+      7.26,
+      1.26
+    ],
+    "magnet_pairs": 1,
+    "magnet_centers": [
+      [
+        0,
+        23
+      ]
+    ],
+    "release": "15 x 2 mm rectangular lower cover notch; no outer semicircular housing scallop",
+    "requires_clock_removed_from_base": true,
+    "backplate_thickness": 5.6,
+    "magnet_support_inner_flush": true,
+    "magnet_radial_gap": 0.13,
+    "magnet_depth_gap": 0.26,
+    "magnet_pocket_floor_thickness": {
+      "body": 1.84,
+      "cover": 0.94
+    }
+  },
+  "rear_hanger": {
+    "outline": "lower round entry with upper narrow rounded stem, per user photo",
+    "entry_diameter": 9,
+    "stem_width": 3.8,
+    "entry_center_y": 86,
+    "nail_note": "Selected nail head must enter 9 mm hole and retain behind 3.8 mm stem; nail is user supplied.",
+    "internal_recess": {
+      "width": 16,
+      "height": 26,
+      "radius": 3,
+      "depth_fraction_of_backplate": 0.5,
+      "depth": 2.8,
+      "remaining_backplate": 2.8,
+      "center_y": 89.7
+    }
+  },
+  "display_layout": {
+    "base": "Design frame position (190,0,0), rotation (0,0,0): upright along design Z, bottom at Z=0.",
+    "body_and_dial": "placements unchanged"
+  },
+  "base_profile": {
+    "front_foot_extension": 28,
+    "forward_increase": 18,
+    "footprint": [
+      90,
+      110
+    ],
+    "neck_end_right_angle_preserved": true,
+    "outer_corner_radius": 18
+  },
+  "dial_seat_support": {
+    "inner_radius": 112,
+    "seat_height": 25.8,
+    "support_start_z": 5.6,
+    "suspended_underside": false,
+    "implementation": "Full annular material down to the backplate; existing lower shell reinforcement retained"
+  },
+  "dial_magnetic_mount": {
+    "positions": [
+      12,
+      3,
+      6,
+      9
+    ],
+    "pocket_diameter": 7.1,
+    "pocket_depth": 1.1,
+    "radius": 111,
+    "centers": [
+      [
+        0,
+        111
+      ],
+      [
+        111,
+        0
+      ],
+      [
+        0,
+        -111
+      ],
+      [
+        -111,
+        0
+      ]
+    ],
+    "pairs": 4,
+    "magnet_size": [
+      7,
+      1
+    ],
+    "quantity": 8,
+    "shell_seat_wall": 2,
+    "dial_minimum_remaining_front_material": 1.3,
+    "dial_back_z": 26,
+    "shell_pocket_mouth_z": 25.8,
+    "magnet_face_gap_if_seated_to_hole_floor": 0.4,
+    "shell_seats_fully_supported_to_backplate": true
   }
 }

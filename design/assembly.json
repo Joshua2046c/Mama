@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 2,
+  "coordinateFrame": "replicator-world-z-up",
+  "placements": {
+    "clock": {
+      "positionMm": [
+        0,
+        -7.706036913929537,
+        168
+      ],
+      "rotationDeg": [
+        74,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ"
+    }
+  },
+  "fits": [],
+  "updatedAt": "2026-10-15T13:17:19.089Z"
+}

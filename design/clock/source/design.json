@@ -12,10 +12,12 @@
           "target": "base",
           "order": 0,
           "path": "design/clock/source/parts/base/000-main.py",
-          "sha256": "febbd9738f1497dab3cd915a84fb810eebefa6603c8889b70b5fe9498d7ba4ad"
+          "sha256": "e46a20d314cbe008522e7d7b8953051c343fc16916ff8f985a378fc36544c5d5"
         }
       ],
-      "dependencies": []
+      "dependencies": [
+        "body"
+      ]
     },
     {
       "id": "body",
@@ -26,7 +28,7 @@
           "target": "body",
           "order": 0,
           "path": "design/clock/source/parts/body/000-main.py",
-          "sha256": "b6bd40b31f58719d07b738895e9e703f81ae8d40bbbac9ed415314c34bd31831"
+          "sha256": "c7193eaf4379108e4f8069291edf3f13d9c0ea7a10c5b8341d14c01d28854686"
         }
       ],
       "dependencies": []
@@ -40,52 +42,62 @@
           "target": "dial",
           "order": 0,
           "path": "design/clock/source/parts/dial/000-dial.py",
-          "sha256": "fb48484ee419d0b09401ed6076987247eaa8954d949fd9e0a3a5df0e9b63feda"
+          "sha256": "e4d1bf38a5930ce0efc56865c6a08f210f82aa48bb2d912cc5906ad18ccf7587"
         }
       ],
-      "dependencies": []
+      "dependencies": [
+        "body"
+      ]
     },
     {
-      "id": "locator",
-      "label": "locator",
+      "id": "battery_cover",
+      "label": "battery_cover",
       "cells": [
         {
-          "id": "locator",
-          "target": "locator",
+          "id": "battery_cover",
+          "target": "battery_cover",
           "order": 0,
-          "path": "design/clock/source/parts/locator/000-locator.py",
-          "sha256": "26f31d5ca8c987060f001b8f07c306cdece47ac4ea131a864a21936d3d64cb23"
+          "path": "design/clock/source/parts/battery_cover/000-battery_cover.py",
+          "sha256": "8351a7276a9d61753ef26b746b7b383b7efd870937084d14e27bbe6f7537dce4"
         }
       ],
-      "dependencies": []
+      "dependencies": [
+        "body"
+      ]
     },
     {
-      "id": "markings",
-      "label": "markings",
+      "id": "rail_left",
+      "label": "rail_left",
       "cells": [
         {
-          "id": "markings",
-          "target": "markings",
+          "id": "rail_left",
+          "target": "rail_left",
           "order": 0,
-          "path": "design/clock/source/parts/markings/000-markings.py",
-          "sha256": "2d13b49f2392ce92c9e02bea836f5090e68f16545a5320b24cc761550cc4c1c1"
+          "path": "design/clock/source/parts/rail_left/000-rail_left.py",
+          "sha256": "7e3f433ae7e94ac4cdef7e72002a56d7d2a107f6890046d73e4669210acfc46d"
         }
       ],
-      "dependencies": []
+      "dependencies": [
+        "body",
+        "base"
+      ]
     },
     {
-      "id": "numerals",
-      "label": "numerals",
+      "id": "rail_right",
+      "label": "rail_right",
       "cells": [
         {
-          "id": "numerals",
-          "target": "numerals",
+          "id": "rail_right",
+          "target": "rail_right",
           "order": 0,
-          "path": "design/clock/source/parts/numerals/000-numerals.py",
-          "sha256": "667788eb62826952a5b08be803565514323a736bf3662ba301b6ca012f90dd73"
+          "path": "design/clock/source/parts/rail_right/000-rail_right.py",
+          "sha256": "f0cf2915fbdaa7592893a77719233d0601f41518c63952907994fa61e00e36f1"
         }
       ],
-      "dependencies": []
+      "dependencies": [
+        "body",
+        "base"
+      ]
     }
   ],
   "objects": [
@@ -95,11 +107,11 @@
       "label": "Extended neck base",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "4ad783c2ed88dcd968258c93739bdef82412839f8e5c8ea5405d043c6e03979e",
+      "shapeHash": "26505926b61e9c7e46d4f42b0d8acf06face3c07df56da963ec433f10936305e",
       "transform": {
         "positionMm": [
+          190,
           0,
-          -10,
           0
         ],
         "rotationDeg": [
@@ -122,15 +134,15 @@
       "label": "Recessed clock body",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "a679a1e15ba4cb691ff33c1d67bcf501ce74fb6c7aa7877b69e3a57704731f1e",
+      "shapeHash": "419dda91122c95904ab9ecfda93304bf8223053373839d265dc804a6384b9255",
       "transform": {
         "positionMm": [
           0,
-          -7.706036913929537,
-          168
+          0,
+          0
         ],
         "rotationDeg": [
-          90,
+          16,
           0,
           0
         ],
@@ -146,18 +158,18 @@
     {
       "id": "dial",
       "target": "dial",
-      "label": "Nested dial",
+      "label": "一体表盘",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "ffef53f87f1ece5630d5a66cfb79c74cccc6a2bcdf589070bbc8827a62ceef39",
+      "shapeHash": "09569276ba12ea7813cd77018272bb93a34d45f103b2b6f7fbacb8cb5eb59f44",
       "transform": {
         "positionMm": [
           0,
-          -32.69884100832583,
-          175.16657125124198
+          -2.6645352591003757e-15,
+          26.000000000000004
         ],
         "rotationDeg": [
-          74,
+          0,
           0,
           0
         ],
@@ -171,20 +183,20 @@
       "datums": []
     },
     {
-      "id": "locator",
-      "target": "locator",
-      "label": "Separate square locator",
+      "id": "battery_cover",
+      "target": "battery_cover",
+      "label": "Magnetic battery cover",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "c359ab7043e56480e1748d34b1f8cd1688f46d008dfa0c51c1d53bbf652fac53",
+      "shapeHash": "b8c0c1d1cc8fbe8d213faaa295db78e8c05b393d9e46aa5de9c1eeaa5049b9d7",
       "transform": {
         "positionMm": [
           0,
-          -12.879440909630038,
-          144.51626326375484
+          0,
+          0
         ],
         "rotationDeg": [
-          74,
+          0,
           0,
           0
         ],
@@ -198,20 +210,20 @@
       "datums": []
     },
     {
-      "id": "markings",
-      "target": "markings",
-      "label": "White raised ticks",
+      "id": "rail_left",
+      "target": "rail_left",
+      "label": "Left bonded slide",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "81139b28186077680a67aa3598e99fadea501be5902b6730758cd96ca1dbde51",
+      "shapeHash": "0432c3e8b9dc3fefee39c0c50e717795a4b7d356faba5a773660a2dd98b3f2ac",
       "transform": {
         "positionMm": [
-          0,
-          -35.005869078577796,
-          175.82810090520277
+          -35,
+          -47,
+          0
         ],
         "rotationDeg": [
-          74,
+          0,
           0,
           0
         ],
@@ -225,20 +237,20 @@
       "datums": []
     },
     {
-      "id": "numerals",
-      "target": "numerals",
-      "label": "Reference traced numerals",
+      "id": "rail_right",
+      "target": "rail_right",
+      "label": "Right bonded slide",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "d602513a95ecb96ec9211a53f858e6757512970b823722a8aa21758f1a4429f0",
+      "shapeHash": "05a4b98588d0c1eacadef69b6eaa5225842e2523e6854a740b4bb48a28a6dcad",
       "transform": {
         "positionMm": [
-          0,
-          -35.005869078577796,
-          175.82810090520277
+          35,
+          -47,
+          0
         ],
         "rotationDeg": [
-          74,
+          0,
           0,
           0
         ],
@@ -254,10 +266,10 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-10-15T11:41:02.627Z",
+  "updatedAt": "2026-10-21T18:04:07.801Z",
   "parameters": {
     "base": {
-      "base_width": 84,
+      "base_width": 90,
       "base_depth": 90,
       "base_height": 160,
       "base_wall": 3,
@@ -266,30 +278,71 @@
       "base_storage_front": 24,
       "base_lip_radius": 0.8,
       "base_contact_angle": 16,
-      "base_front_foot_extension": 10,
+      "base_front_foot_extension": 28,
       "base_neck_inset": 24,
       "base_neck_underside_height": 114,
       "base_rear_inset": 8,
-      "base_locator_width": 12.5,
-      "base_locator_depth": 4.2,
-      "base_locator_drop": 15.070280702519653,
-      "base_neck_end_flat_length": 20
+      "base_neck_end_flat_length": 20,
+      "base_slide_pad_corner_radius": 2.25,
+      "base_minimum_slot_outer_wall": 2
     },
     "body": {
       "body_diameter": 240,
       "body_depth": 32,
       "body_wall": 2.7,
-      "body_back_thickness": 3.5,
+      "body_back_thickness": 5.6,
       "body_seat_height": 25.8,
       "body_seat_thickness": 2.8,
       "body_seat_width": 5.3,
       "body_rear_chamfer": 7,
       "body_front_chamfer": 1,
       "body_tilt_angle": 16,
-      "body_locator_width": 12.5,
-      "body_locator_depth": 1.2,
-      "body_locator_y": -24,
-      "body_inner_lip_radius": 0.8
+      "body_inner_lip_radius": 0.8,
+      "body_hatch_size": 58,
+      "body_hatch_radius": 3,
+      "body_hatch_gap": 0.3,
+      "body_door_thickness": 2.2,
+      "body_hatch_seat_depth": 2.5,
+      "body_hatch_ledge": 1.5,
+      "body_slide_spacing_half": 35,
+      "body_slide_bottom": -47,
+      "body_slide_stem_width": 4.5,
+      "body_slide_head_width": 8,
+      "body_slide_neck_depth": 2.5,
+      "body_slide_projection": 5,
+      "body_slide_clearance": 0.25,
+      "body_hanger_y": 86,
+      "body_hanger_entry_diameter": 9,
+      "body_hanger_neck_width": 3.8,
+      "body_hanger_neck_rise": 10,
+      "body_minimum_cavity_depth": 17,
+      "body_slide_detent_arm_length": 9,
+      "body_slide_detent_arm_thickness": 1,
+      "body_slide_detent_arm_width": 2.8,
+      "body_slide_detent_slit": 0.6,
+      "body_slide_detent_rise": 0.55,
+      "body_magnet_diameter": 7,
+      "body_magnet_thickness": 1,
+      "body_magnet_center_offset": 23,
+      "body_magnet_boss_size": 11,
+      "body_magnet_boss_inner_z": 5.6,
+      "body_magnet_boss_radius": 2,
+      "body_slide_top_y": -8.322395486893,
+      "body_rail_bond_width": 10,
+      "body_rail_bond_thickness": 0.85,
+      "body_rail_bond_embed": 0.05,
+      "body_rail_recess_depth": 0.1,
+      "body_rail_recess_side_gap": 0.1,
+      "body_magnet_pocket_diameter": 7.26,
+      "body_magnet_pocket_depth": 1.26,
+      "body_rail_bond_corner_radius": 2,
+      "body_hanger_relief_width": 16,
+      "body_hanger_relief_height": 26,
+      "body_hanger_relief_radius": 3,
+      "body_dial_magnet_pocket_diameter": 7.1,
+      "body_dial_magnet_pocket_depth": 1.1,
+      "body_dial_magnet_radius": 111,
+      "body_dial_magnet_seat_wall": 2
     },
     "dial": {
       "dial_diameter": 234,
@@ -298,25 +351,29 @@
       "dial_edge_rise": 3,
       "dial_shaft_hole_diameter": 10,
       "dial_lip_radius": 1,
-      "dial_back_edge_radius": 0.5
-    },
-    "locator": {
-      "locator_width": 12,
-      "locator_thickness": 5,
-      "locator_edge_chamfer": 0.2
-    },
-    "markings": {
+      "dial_back_edge_radius": 0.5,
       "markings_tick_radius": 101,
       "markings_hour_length": 8,
       "markings_hour_width": 4,
       "markings_minute_length": 6,
       "markings_minute_width": 0.9,
-      "markings_relief_height": 0.6
-    },
-    "numerals": {
+      "markings_relief_height": 0.6,
       "numerals_radius": 77,
       "numerals_height": 25,
       "numerals_relief_height": 0.6
+    },
+    "battery_cover": {
+      "cover_thickness": 2.2,
+      "cover_finger_notch_width": 15,
+      "cover_finger_notch_height": 2
+    },
+    "rail_left": {
+      "rail_side": -1,
+      "rail_entry_chamfer": 0.2
+    },
+    "rail_right": {
+      "rail_side": 1,
+      "rail_entry_chamfer": 0.2
     }
   }
 }

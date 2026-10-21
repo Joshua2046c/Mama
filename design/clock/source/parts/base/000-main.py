@@ -12,9 +12,6 @@ foot=param("base_front_foot_extension",10.0)
 waist=param("base_neck_inset",24.0)
 neck_z=param("base_neck_underside_height",114.0)
 rear_inset=param("base_rear_inset",8.0)
-loc_w=param("base_locator_width",12.5)
-loc_depth=param("base_locator_depth",4.2)
-loc_drop=param("base_locator_drop",15.069719297)
 neck_flat=param("base_neck_end_flat_length",20.0)
 slope=math.tan(math.radians(tilt))
 neck_front=(neck_z-h)*slope
@@ -55,11 +52,48 @@ shell=shell-pocket
 # Keep the front mating/top intersection crisp too.
 rim=[e for e in shell.edges() if abs(e.center().Z-h)<0.001 and e.center().Y>0.001]
 shell=fillet(rim,radius=lip)
-loc_z=h-loc_drop
-loc_y=-loc_drop*slope
-# Blind recess normal to the mating surface, fully covered after bonding.
-pocket_cut=Pos(0,loc_y,loc_z)*Rot(90-tilt,0,0)*Pos(0,0,-loc_depth)*Box(loc_w,loc_w,loc_depth+1,align=(Align.CENTER,Align.CENTER,Align.MIN))
-shell=shell-pocket_cut
-shell.color=Color(0.96,0.58,0.035)
+
+joint=part("body")
+# Assembly-interface frame, independent of the base's display placement.
+clock_to_base=Rot(74,0,0)*Pos(0,162.12426683702384,44.101976930719864)
+base_to_clock=Pos(0,-162.12426683702384,-44.101976930719864)*Rot(-74,0,0)
+clearance=joint.slide_gap
+pad_corner=param("base_slide_pad_corner_radius",2.25)
+minimum_slot_wall=param("base_minimum_slot_outer_wall",2.0)
+# Evaluate actual distance to the exterior side skins of the uncut neck.
+# The marked lower corners are the R18 cylinders running normal to the
+# contact plane; the flat outside walls close the rest of each side.
+from OCP.BRepAdaptor import BRepAdaptor_Surface
+from OCP.GeomAbs import GeomAbs_Cylinder
+outer_clock=base_to_clock*shell
+side_skins={-1:[],1:[]}
+for face in outer_clock.faces():
+    fc=face.center()
+    surface=BRepAdaptor_Surface(face.wrapped)
+    is_side_plane=(face.geom_type==GeomType.PLANE and abs(abs(fc.X)-w/2)<1e-6)
+    is_corner=False
+    if surface.GetType()==GeomAbs_Cylinder:
+        cylinder=surface.Cylinder()
+        is_corner=(abs(cylinder.Radius()-cr)<1e-6 and abs(cylinder.Axis().Direction().Z())>0.99999)
+    if is_side_plane or is_corner:
+        side_skins[1 if fc.X>0 else -1].append(face)
+assert all(len(v)>=2 for v in side_skins.values()), {k:len(v) for k,v in side_skins.items()}
+slot_outer_wall_results=[]
+for x in (-joint.slide_x,joint.slide_x):
+    reach=joint.slide_length+40
+    stem_cut=Pos(x,joint.slide_bottom,-joint.slide_projection-clearance)*Box(joint.slide_stem+2*clearance,reach,joint.slide_projection+clearance+1,align=(Align.CENTER,Align.MIN,Align.MIN))
+    head_cut=Pos(x,joint.slide_bottom,-joint.slide_projection-clearance)*Box(joint.slide_head+2*clearance,reach,joint.slide_projection-joint.slide_neck+2*clearance,align=(Align.CENTER,Align.MIN,Align.MIN))
+    pad_cut=Pos(x,joint.slide_bottom+reach/2,joint.bond_embed-joint.bond_t-clearance)*extrude(RectangleRounded(joint.bond_width+2*clearance,reach+2*clearance,pad_corner),amount=joint.bond_t-joint.bond_embed+clearance+1)
+    slot_void=stem_cut+head_cut+pad_cut
+    side=1 if x>0 else -1
+    measured_wall=min(slot_void.distance_to(face) for face in side_skins[side])
+    slot_outer_wall_results.append(measured_wall)
+    assert measured_wall>=minimum_slot_wall-1e-6, ("actual lower-corner/side wall",side,measured_wall,minimum_slot_wall)
+    shell-=clock_to_base*slot_void
+# The front mating surface stays planar: no central rectangular relief.
+print("Measured minimum side/corner wall thicknesses:",slot_outer_wall_results,"mm")
+assert clearance>=0.1
 assert len(shell.solids())==1
+assert shell.is_valid
+shell.color=srgb("#F5A313")
 publish("base",shell,"Extended neck base",material="petg")

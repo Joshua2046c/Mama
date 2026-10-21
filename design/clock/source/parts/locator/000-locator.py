@@ -1,7 +1,0 @@
-w=param("locator_width",12.0)
-thick=param("locator_thickness",5.0)
-bevel=param("locator_edge_chamfer",0.2)
-locator=Box(w,w,thick)
-locator=chamfer(locator.edges(),length=bevel)
-locator.color=Color(0.96,0.65,0.06)
-publish("locator",locator,"Separate square locator",material="petg")
