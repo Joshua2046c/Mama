@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "coordinateFrame": "replicator-world-z-up",
+  "coordinateFrame": "makit-world-z-up",
   "placements": {
-    "clock": {
+    "clock_recovered": {
       "positionMm": [
         0,
         -7.706036913929537,

@@ -1,0 +1,949 @@
+{
+  "schemaVersion": 1,
+  "units": "mm",
+  "coordinateFrame": "makit-world-z-up",
+  "targets": [
+    {
+      "id": "body",
+      "label": "body",
+      "cells": [
+        {
+          "id": "body",
+          "target": "body",
+          "order": 0,
+          "path": "design/clock_recovered/source/parts/body/000-body.py",
+          "sha256": "bc1db38a509ba118404258c926b6ca125096a3c56bae3f287adfa9048b377716"
+        },
+        {
+          "id": "topology_1",
+          "target": "body",
+          "order": 1,
+          "path": "design/clock_recovered/source/parts/body/001-topology_1.py",
+          "sha256": "d4050752372931b4214d947fdd6801a7caf9b5784746d6569863a73671b99ba2"
+        },
+        {
+          "id": "topology_2",
+          "target": "body",
+          "order": 2,
+          "path": "design/clock_recovered/source/parts/body/002-topology_2.py",
+          "sha256": "67bfb3f121378641d0e7274a8f68ed300c5136780f6643748c67fbcb70658bbe"
+        },
+        {
+          "id": "topology_3",
+          "target": "body",
+          "order": 3,
+          "path": "design/clock_recovered/source/parts/body/003-topology_3.py",
+          "sha256": "bdde313b0eeb5fe6f38295e3294b0ee261bb38e3d40c764f632921a9b330515f"
+        },
+        {
+          "id": "features",
+          "target": "body",
+          "order": 4,
+          "path": "design/clock_recovered/source/parts/body/004-features.py",
+          "sha256": "192babc5a7abe4c582653bc4fb943c67312106f32fed11c8a5a6228e112b74fe"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "dial",
+      "label": "dial",
+      "cells": [
+        {
+          "id": "dial",
+          "target": "dial",
+          "order": 0,
+          "path": "design/clock_recovered/source/parts/dial/000-dial.py",
+          "sha256": "f4cf728d39d68c053cb83519e4644629e38a8349b473ae091c610972cbfaf1b6"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "battery_cover",
+      "label": "battery_cover",
+      "cells": [
+        {
+          "id": "battery_cover",
+          "target": "battery_cover",
+          "order": 0,
+          "path": "design/clock_recovered/source/parts/battery_cover/000-battery_cover.py",
+          "sha256": "87d6df29c46d3f6c3d9f166ff3b514bbccd3e455d820aedd42e37a4106662eae"
+        }
+      ],
+      "dependencies": [
+        "body"
+      ]
+    },
+    {
+      "id": "base",
+      "label": "base",
+      "cells": [
+        {
+          "id": "base",
+          "target": "base",
+          "order": 0,
+          "path": "design/clock_recovered/source/parts/base/000-base.py",
+          "sha256": "058358c5d22e1dd1105ed39c47cdc429ecbab6215970562a366116e3ba3de1cf"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "rail_left",
+      "label": "rail_left",
+      "cells": [
+        {
+          "id": "rail_left",
+          "target": "rail_left",
+          "order": 0,
+          "path": "design/clock_recovered/source/parts/rail_left/000-rail_left.py",
+          "sha256": "170a5e7cce124288173463238616d8e34f21bb12ca5e4c2dba7b28094d66ed52"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "rail_right",
+      "label": "rail_right",
+      "cells": [
+        {
+          "id": "rail_right",
+          "target": "rail_right",
+          "order": 0,
+          "path": "design/clock_recovered/source/parts/rail_right/000-rail_right.py",
+          "sha256": "3c9b45831eed7fef1fcbf60997800520c567867a76af33049aef32de3f015622"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "diffuser_01",
+      "label": "diffuser_01",
+      "cells": [
+        {
+          "id": "diffuser_01",
+          "target": "diffuser_01",
+          "order": 0,
+          "path": "design/clock_recovered/source/parts/diffuser_01/000-diffuser_01.py",
+          "sha256": "e39cbcf55f08520dca65f15ffa56243afe5dca898f0decd858e43d66bf819689"
+        }
+      ],
+      "dependencies": [
+        "dial"
+      ]
+    },
+    {
+      "id": "diffuser_02",
+      "label": "diffuser_02",
+      "cells": [
+        {
+          "id": "diffuser_02",
+          "target": "diffuser_02",
+          "order": 0,
+          "path": "design/clock_recovered/source/parts/diffuser_02/000-diffuser_02.py",
+          "sha256": "20714f37868f511c163a8daadda50b3eb083805cad266d09331e48aca71ae61d"
+        }
+      ],
+      "dependencies": [
+        "dial"
+      ]
+    },
+    {
+      "id": "diffuser_03",
+      "label": "diffuser_03",
+      "cells": [
+        {
+          "id": "diffuser_03",
+          "target": "diffuser_03",
+          "order": 0,
+          "path": "design/clock_recovered/source/parts/diffuser_03/000-diffuser_03.py",
+          "sha256": "36be7aa02cbb0984171eb41e8e80ea9876b371810e49b93227f88f3f5975258c"
+        }
+      ],
+      "dependencies": [
+        "dial"
+      ]
+    },
+    {
+      "id": "diffuser_04",
+      "label": "diffuser_04",
+      "cells": [
+        {
+          "id": "diffuser_04",
+          "target": "diffuser_04",
+          "order": 0,
+          "path": "design/clock_recovered/source/parts/diffuser_04/000-diffuser_04.py",
+          "sha256": "c395f1a437885f22da4ede9005c3df6df2ae6ad4d31a2e77f947cd46db3339d1"
+        }
+      ],
+      "dependencies": [
+        "dial"
+      ]
+    },
+    {
+      "id": "diffuser_05",
+      "label": "diffuser_05",
+      "cells": [
+        {
+          "id": "diffuser_05",
+          "target": "diffuser_05",
+          "order": 0,
+          "path": "design/clock_recovered/source/parts/diffuser_05/000-diffuser_05.py",
+          "sha256": "f618e719c41fa2bd62f5f509d5c0117afad2258731131897e62bac07d8a3b627"
+        }
+      ],
+      "dependencies": [
+        "dial"
+      ]
+    },
+    {
+      "id": "diffuser_06",
+      "label": "diffuser_06",
+      "cells": [
+        {
+          "id": "diffuser_06",
+          "target": "diffuser_06",
+          "order": 0,
+          "path": "design/clock_recovered/source/parts/diffuser_06/000-diffuser_06.py",
+          "sha256": "541b7c637010cb14fca3b6c447f146a0ca0953236b6cbdefebcdfb6d00758910"
+        }
+      ],
+      "dependencies": [
+        "dial"
+      ]
+    },
+    {
+      "id": "diffuser_07",
+      "label": "diffuser_07",
+      "cells": [
+        {
+          "id": "diffuser_07",
+          "target": "diffuser_07",
+          "order": 0,
+          "path": "design/clock_recovered/source/parts/diffuser_07/000-diffuser_07.py",
+          "sha256": "07530197c93a8b3fed73550c276989d40c156a9880930d44ed2251745e1c1261"
+        }
+      ],
+      "dependencies": [
+        "dial"
+      ]
+    },
+    {
+      "id": "diffuser_08",
+      "label": "diffuser_08",
+      "cells": [
+        {
+          "id": "diffuser_08",
+          "target": "diffuser_08",
+          "order": 0,
+          "path": "design/clock_recovered/source/parts/diffuser_08/000-diffuser_08.py",
+          "sha256": "8d06bc7c67ea28c08e611d24d4338a6a276e01aba2eab6c7d5e9444e95f0ac26"
+        }
+      ],
+      "dependencies": [
+        "dial"
+      ]
+    },
+    {
+      "id": "diffuser_09",
+      "label": "diffuser_09",
+      "cells": [
+        {
+          "id": "diffuser_09",
+          "target": "diffuser_09",
+          "order": 0,
+          "path": "design/clock_recovered/source/parts/diffuser_09/000-diffuser_09.py",
+          "sha256": "e67345300cc839c04b5d6391ab6ab48b42c23b356c7da7ced2b91454242bc320"
+        }
+      ],
+      "dependencies": [
+        "dial"
+      ]
+    },
+    {
+      "id": "diffuser_10",
+      "label": "diffuser_10",
+      "cells": [
+        {
+          "id": "diffuser_10",
+          "target": "diffuser_10",
+          "order": 0,
+          "path": "design/clock_recovered/source/parts/diffuser_10/000-diffuser_10.py",
+          "sha256": "7a09909bf2413a9a6480a9fbf5f0d66c436917f448a5b8c8bfd65af5b45a067a"
+        }
+      ],
+      "dependencies": [
+        "dial"
+      ]
+    },
+    {
+      "id": "light_baffle",
+      "label": "light_baffle",
+      "cells": [
+        {
+          "id": "light_baffle",
+          "target": "light_baffle",
+          "order": 0,
+          "path": "design/clock_recovered/source/parts/light_baffle/000-light_baffle.py",
+          "sha256": "64dc41a3b069a9f446dc1341f43d82f6ce9eb13942b27ad9cf831ed442f9e092"
+        }
+      ],
+      "dependencies": [
+        "dial"
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "body",
+      "target": "body",
+      "label": "钟壳",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "e11f2d10df12cc35bf82f47dd9acc4efafceaac9b68d1d7f926e3a9f5cbbb4a8",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "dial",
+      "target": "dial",
+      "label": "一体浮雕网格表盘",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "90009b9c6fc3f007253c0042f3bbf581799d8c0f7c3bd781d902befce35fd160",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "battery_cover",
+      "target": "battery_cover",
+      "label": "磁吸电池盖",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "6e504d9b326fb124d0d3316071159ed940cf61f270fc43d0e41953ded6c9225e",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "base",
+      "target": "base",
+      "label": "收纳底座",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "268d798ae8fbcaa293e38ca58d70becb4b7c661bd77fd924d9e8c18ed68e6ed1",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "rail_left",
+      "target": "rail_left",
+      "label": "左粘合滑轨",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "6ca7f5a70b1740dae54baf7f9344e92fb8bc447ecf75f0d63db201be2f44444f",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "rail_right",
+      "target": "rail_right",
+      "label": "右粘合滑轨",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "39a1ee8110d189870f5b74781722ed3c3bdf493f8f4d5b5af40d1ff818aa0939",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "diffuser_01",
+      "target": "diffuser_01",
+      "label": "扩散窗 1",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "83c4d1442a2abb2b47511be26ef301f5d3b0a25acd2890caa34d7a369495c20b",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "diffuser_02",
+      "target": "diffuser_02",
+      "label": "扩散窗 2",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "e6e2a606ab922d21cc2afe2c85ae0c4648a411c806b6d5fb996c41070984c1cf",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "diffuser_03",
+      "target": "diffuser_03",
+      "label": "扩散窗 3",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "383a27d7f468200ee0398a25d45756de96e9369daaf101a162a31a32983a6202",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "diffuser_04",
+      "target": "diffuser_04",
+      "label": "扩散窗 4",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "4cb64518ed309b37f026cc5037a35463b3aa570f18702ba807efa2988b85b8fc",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "diffuser_05",
+      "target": "diffuser_05",
+      "label": "扩散窗 5",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "40614c016c5557ba5513814394f9a26a1ec7ac0e5c7a133ea99a9dbe4901a539",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "diffuser_06",
+      "target": "diffuser_06",
+      "label": "扩散窗 6",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "4a5f046771537116add6e91415cd9f1e378d7dc3950d8d88258ae7656d14e337",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "diffuser_07",
+      "target": "diffuser_07",
+      "label": "扩散窗 7",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "38cccd6dbeddf4e4e1e796203301ed3a116214c905c2f06aca1fa8487233015f",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "diffuser_08",
+      "target": "diffuser_08",
+      "label": "扩散窗 8",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "ad795f48491b759da5633868e41a66717e5d6d33647131ff7236a1a396b61a33",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "diffuser_09",
+      "target": "diffuser_09",
+      "label": "扩散窗 9",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "f4a632718821ed08726c7ad4b54149e8c523d478238f8dd24fe35a4e87fde1df",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "diffuser_10",
+      "target": "diffuser_10",
+      "label": "扩散窗 10",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "15dc567d8007c1ca36f4ae77a747bb18f2eb8a0f75d8ee586208b8a5b2f4c7a3",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "light_baffle",
+      "target": "light_baffle",
+      "label": "十灯遮光隔仓",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "f376d398eeb54559f58bcab73d34424356af250621a989cb1f0a0c0cf18addd4",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [],
+  "fits": [],
+  "updatedAt": "2026-11-07T14:10:18.415Z",
+  "parameters": {
+    "body": {
+      "body_magnet_pocket_diameter": 7.1,
+      "body_magnet_pocket_depth": 1.1,
+      "body_magnet_center_offset": 23,
+      "body_usb_access_width": 13.5,
+      "body_usb_access_height": 9.5,
+      "body_usb_access_center_y": -41.6,
+      "body_pcb_back_z": 22.8,
+      "body_pcb_adhesive_thickness": 0.1,
+      "body_pcb_post_diameter": 6,
+      "body_pcb_root_diameter": 8,
+      "body_pcb_contact_diameter": 4.4,
+      "body_pcb_pin_diameter": 2.1,
+      "body_pcb_pin_height": 1.4,
+      "body_power_slot_clearance": 0.3,
+      "body_power_side_clearance": 0.2,
+      "body_power_edge_grip": 0.7,
+      "body_power_guide_wall": 2.2,
+      "body_power_bottom_gap": 0.2,
+      "body_power_top_extension": 0.5
+    },
+    "dial": {
+      "dial_back_height": 26,
+      "dial_flat_thickness": 2.4,
+      "dial_outer_radius": 117,
+      "dial_shaft_hole_diameter": 10,
+      "dial_lip_start_radius": 108,
+      "dial_lip_top_height": 30.5436,
+      "dial_magnet_center_radius": 111,
+      "dial_magnet_pocket_diameter": 7.1,
+      "dial_magnet_pocket_depth": 1.1,
+      "dial_grid_pitch": 7,
+      "dial_led_pitch": 14,
+      "dial_led_lower_y": 31.5,
+      "dial_light_window_size": 5.4,
+      "dial_light_window_radius": 0.5,
+      "dial_diffuser_flange_pocket": 6.8,
+      "dial_diffuser_flange_depth": 1,
+      "dial_grid_line_width": 0.4,
+      "dial_grid_relief_height": 0.1,
+      "dial_markings_relief_height": 0.2,
+      "dial_art_radius": 107.5,
+      "dial_numeral_size": 29,
+      "dial_numeral_radius": 83,
+      "dial_tick_radius": 101,
+      "dial_minute_width": 0.55,
+      "dial_minute_length": 5,
+      "dial_hour_width": 1.1,
+      "dial_hour_length": 8,
+      "dial_cardinal_width": 4.5,
+      "dial_cardinal_length": 11,
+      "dial_cardinal_radius": 101.5,
+      "dial_logo_size": 8.8,
+      "dial_logo_y": -41,
+      "dial_curve_tolerance": 0.001,
+      "dial_diffuser_pocket_overhang": 0.7,
+      "dial_movement_length": 56,
+      "dial_movement_width": 56,
+      "dial_movement_corner_radius": 3,
+      "dial_movement_line_width": 0.5,
+      "dial_movement_line_depth": 0.2,
+      "dial_movement_offset_x": 0,
+      "dial_movement_offset_y": 0
+    },
+    "battery_cover": {
+      "cover_position_z": 0
+    },
+    "base": {
+      "base_display_x": 190,
+      "base_usb_passage_width": 16,
+      "base_usb_passage_height": 12,
+      "base_usb_port_clock_y": -41.6,
+      "base_clock_back_center_height": 168,
+      "base_clock_tilt": 16,
+      "base_floor_cable_y": 59,
+      "base_floor_plug_slot_width": 16,
+      "base_floor_plug_slot_length": 12,
+      "base_bottom_cable_channel_width": 8,
+      "base_bottom_cable_channel_depth": 5,
+      "base_inside_cable_channel_width": 6,
+      "base_inside_cable_channel_depth": 2.5
+    },
+    "rail_left": {
+      "rail_left_center_x": -35
+    },
+    "rail_right": {
+      "rail_right_center_x": 35
+    },
+    "diffuser_01": {
+      "diffuser_01_front_size": 5,
+      "diffuser_01_flange_size": 6.6,
+      "diffuser_01_height": 2.2,
+      "diffuser_01_flange_thickness": 0.8,
+      "diffuser_01_back_gap": 0.2,
+      "diffuser_01_front_clearance": 0.2,
+      "diffuser_01_flange_clearance": 0.1
+    },
+    "diffuser_02": {
+      "diffuser_02_front_size": 5,
+      "diffuser_02_flange_size": 6.6,
+      "diffuser_02_height": 2.2,
+      "diffuser_02_flange_thickness": 0.8,
+      "diffuser_02_back_gap": 0.2,
+      "diffuser_02_front_clearance": 0.2,
+      "diffuser_02_flange_clearance": 0.1
+    },
+    "diffuser_03": {
+      "diffuser_03_front_size": 5,
+      "diffuser_03_flange_size": 6.6,
+      "diffuser_03_height": 2.2,
+      "diffuser_03_flange_thickness": 0.8,
+      "diffuser_03_back_gap": 0.2,
+      "diffuser_03_front_clearance": 0.2,
+      "diffuser_03_flange_clearance": 0.1
+    },
+    "diffuser_04": {
+      "diffuser_04_front_size": 5,
+      "diffuser_04_flange_size": 6.6,
+      "diffuser_04_height": 2.2,
+      "diffuser_04_flange_thickness": 0.8,
+      "diffuser_04_back_gap": 0.2,
+      "diffuser_04_front_clearance": 0.2,
+      "diffuser_04_flange_clearance": 0.1
+    },
+    "diffuser_05": {
+      "diffuser_05_front_size": 5,
+      "diffuser_05_flange_size": 6.6,
+      "diffuser_05_height": 2.2,
+      "diffuser_05_flange_thickness": 0.8,
+      "diffuser_05_back_gap": 0.2,
+      "diffuser_05_front_clearance": 0.2,
+      "diffuser_05_flange_clearance": 0.1
+    },
+    "diffuser_06": {
+      "diffuser_06_front_size": 5,
+      "diffuser_06_flange_size": 6.6,
+      "diffuser_06_height": 2.2,
+      "diffuser_06_flange_thickness": 0.8,
+      "diffuser_06_back_gap": 0.2,
+      "diffuser_06_front_clearance": 0.2,
+      "diffuser_06_flange_clearance": 0.1
+    },
+    "diffuser_07": {
+      "diffuser_07_front_size": 5,
+      "diffuser_07_flange_size": 6.6,
+      "diffuser_07_height": 2.2,
+      "diffuser_07_flange_thickness": 0.8,
+      "diffuser_07_back_gap": 0.2,
+      "diffuser_07_front_clearance": 0.2,
+      "diffuser_07_flange_clearance": 0.1
+    },
+    "diffuser_08": {
+      "diffuser_08_front_size": 5,
+      "diffuser_08_flange_size": 6.6,
+      "diffuser_08_height": 2.2,
+      "diffuser_08_flange_thickness": 0.8,
+      "diffuser_08_back_gap": 0.2,
+      "diffuser_08_front_clearance": 0.2,
+      "diffuser_08_flange_clearance": 0.1
+    },
+    "diffuser_09": {
+      "diffuser_09_front_size": 5,
+      "diffuser_09_flange_size": 6.6,
+      "diffuser_09_height": 2.2,
+      "diffuser_09_flange_thickness": 0.8,
+      "diffuser_09_back_gap": 0.2,
+      "diffuser_09_front_clearance": 0.2,
+      "diffuser_09_flange_clearance": 0.1
+    },
+    "diffuser_10": {
+      "diffuser_10_front_size": 5,
+      "diffuser_10_flange_size": 6.6,
+      "diffuser_10_height": 2.2,
+      "diffuser_10_flange_thickness": 0.8,
+      "diffuser_10_back_gap": 0.2,
+      "diffuser_10_front_clearance": 0.2,
+      "diffuser_10_flange_clearance": 0.1
+    },
+    "light_baffle": {
+      "baffle_width": 76,
+      "baffle_height": 28,
+      "baffle_thickness": 1.15,
+      "baffle_back_z": 24.8,
+      "baffle_light_cell_width": 5.8,
+      "baffle_light_edge_clearance": 0.2
+    }
+  }
+}

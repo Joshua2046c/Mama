@@ -1,6 +1,6 @@
-# Replicator — managed block, edited by the app. Your own rules go above.
+# Makit — managed block, edited by the app. Your own rules go above.
 /.work/
-/.replicator/
+/.makit/
 .history/
 .DS_Store
 *.tmp-*
@@ -29,39 +29,7 @@ manufacturing/**
 !manufacturing/**/*.json
 !manufacturing/**/*.md
 
-/product/references/dial-numeral-trace.json
-/product/references/uploads/20260925T180213684Z-1-20260922184141aicy-1-58-29.jpg
-/product/references/uploads/20260925T180213684Z-2-ishot-2026-09-26-1-58-08.png
-/product/references/uploads/20260925T181001609Z-1-image.png
-/product/references/uploads/20260925T181654023Z-1-ishot-2026-09-26-2-15-38.png
-/product/references/uploads/20260925T181654023Z-2-ishot-2026-09-26-2-15-44.png
-/product/references/uploads/20260926T012106859Z-1-mark.png
-/product/references/uploads/20260926T014648949Z-1-mark.png
-/product/references/uploads/20260926T015051914Z-1-mark.png
-/product/references/uploads/20260926T015637433Z-1-mark.png
-/product/references/uploads/20260926T015758472Z-1-mark.png
-/product/references/uploads/20260926T020754483Z-1-image.png
-/product/references/uploads/20260926T022642415Z-1-image.png
-/product/references/uploads/20260926T025955152Z-1-mark.png
-/product/references/uploads/20260926T141908583Z-1-mark.png
-/product/references/uploads/20260929T140137364Z-1-mark.png
-/product/references/uploads/20260929T141726501Z-1-mark.png
-/product/references/uploads/20261015T121832532Z-1-image.png
-/product/references/uploads/20261019T234954469Z-1-mark-1.png
-/product/references/uploads/20261019T234954469Z-2-image.png
-/product/references/uploads/20261020T002633869Z-1-mark-1.png
-/product/references/uploads/20261020T002633869Z-2-mark-2.png
-/product/references/uploads/20261020T002633869Z-3-mark-3.png
-/product/references/uploads/20261020T003712984Z-1-mark-1.png
-/product/references/uploads/20261020T003712984Z-2-mark-2.png
-/product/references/uploads/20261020T003712984Z-3-mark-3.png
-/product/references/uploads/20261020T004804738Z-1-mark-1.png
-/product/references/uploads/20261020T004804738Z-2-mark-2.png
-/product/references/uploads/20261020T005647819Z-1-mark-1.png
-/product/references/uploads/20261020T005647819Z-2-mark-2.png
-/product/references/uploads/20261020T005647819Z-3-mark-3.png
-/product/references/uploads/20261020T010720069Z-1-mark-1.png
-/product/references/uploads/20261020T010720069Z-2-mark-2.png
-/product/references/uploads/20261021T174736776Z-1-mark-1.png
-/product/references/uploads/20261021T180155451Z-1-mark-1.png
-# Replicator — end managed block
+/product/references/**
+!/product/references/**/
+!/product/references/index.json
+# Makit — end managed block

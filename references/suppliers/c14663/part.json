@@ -1,0 +1,73 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-09T20:51:45.574Z",
+  "lcsc_code": "C14663",
+  "manufacturer": "YAGEO(国巨)",
+  "manufacturer_part_number": "CC0603KRX7R9BB104",
+  "description": "100nF ±10% 50V Ceramic Capacitor X7R 0603",
+  "category": "贴片电容(MLCC)",
+  "package": "0603",
+  "jlcpcb_part_class": "basic",
+  "parameters": {
+    "Capacitance": "100nF",
+    "Temperature Coefficient": "X7R",
+    "Tolerance": "±10%",
+    "Voltage Rating": "50V"
+  },
+  "lcsc_stock": null,
+  "price_breaks": [
+    {
+      "quantity": 8000,
+      "unitPrice": 0.0204,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 8000,
+      "unitPrice": 0.0196,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 48000,
+      "unitPrice": 0.0187,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100000,
+      "unitPrice": 0.0184,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.0126,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.0101,
+      "currency": "USD"
+    },
+    {
+      "quantity": 3000,
+      "unitPrice": 0.0087,
+      "currency": "USD"
+    },
+    {
+      "quantity": 8000,
+      "unitPrice": 0.0078,
+      "currency": "USD"
+    },
+    {
+      "quantity": 48000,
+      "unitPrice": 0.0071,
+      "currency": "USD"
+    },
+    {
+      "quantity": 96000,
+      "unitPrice": 0.0067,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/15331.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/23ccee80ee542e7cf156a772bb589942.pdf?productCode=C14663",
+  "datasheet_file": null
+}

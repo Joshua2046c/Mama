@@ -1,0 +1,87 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-09T20:49:29.357Z",
+  "lcsc_code": "C165948",
+  "manufacturer": "韩国韩荣",
+  "manufacturer_part_number": "TYPE-C-31-M-12",
+  "description": "USB-C (USB TYPE-C) Receptacle Connector 16 Position Surface Mount",
+  "category": "USB连接器",
+  "package": "SMD",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Number of Ports": "1",
+    "Number of Contacts": "16P",
+    "Connector Type": "Type-C",
+    "Voltage Rating": "20V",
+    "Operating Temperature": "-30°C~+80°C",
+    "Length": "7.35mm",
+    "Mounting Type": "Surface Mount, Right Angle",
+    "Gender": "Female"
+  },
+  "lcsc_stock": 55316,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 1.1424,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.9017,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.7842,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.6361,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.6073,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.5901,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.1887,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.149,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.1296,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.1051,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.1003,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0975,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/177331.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/9e56b777c022540fcce7c7f67825f55e.pdf?productCode=C165948",
+  "datasheet_file": "references/suppliers/c165948/c165948-datasheet.pdf"
+}

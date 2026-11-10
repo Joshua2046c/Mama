@@ -2,10 +2,38 @@
   "schemaVersion": 1,
   "entries": [
     {
+      "file": "clock-step-recovery.json",
+      "sha256": "ccc8bcc7592431b8bd7464b7f184e1131ba0745f68c3bfc4af8338af4ed4cc74",
+      "bytes": 928,
+      "addedAt": "2026-10-28T01:30:44.408Z",
+      "share": false
+    },
+    {
       "file": "dial-numeral-trace.json",
       "sha256": "d107f1183802a87b78cfd3d303ab140434a38ba799571133f73c525d5abe5a89",
       "bytes": 71022,
       "addedAt": "2026-09-26T02:31:00.374Z",
+      "share": false
+    },
+    {
+      "file": "progress-components.json",
+      "sha256": "25555a54fd122cbfda8619f86e846afe5e1b86dd48ffdd1eb8acd6d872b1df50",
+      "bytes": 21327,
+      "addedAt": "2026-11-07T08:06:33.195Z",
+      "share": false
+    },
+    {
+      "file": "seeed/xiao-esp32c3-v1.3-kicad.zip",
+      "sha256": "477bc61cec652eaeefa887cb1f97abb1514e8a61ea9659240b88be7213c3b6ff",
+      "bytes": 339671,
+      "addedAt": "2026-11-07T09:00:53.355Z",
+      "share": false
+    },
+    {
+      "file": "seeed/xiao-footprints.zip",
+      "sha256": "671cb119639e489091b87a64e070d4aba1f22860ddfdbecc85ff143c0c295e28",
+      "bytes": 1084956,
+      "addedAt": "2026-11-07T08:06:33.212Z",
       "share": false
     },
     {
@@ -244,6 +272,48 @@
       "sha256": "4488b457198fb7f9341bb116506a38aba4502f59a16469820218660b0a04dd61",
       "bytes": 75449,
       "addedAt": "2026-10-21T18:02:05.150Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261107T075253989Z-1-chatgpt-2026-11-6-14-38-25.png",
+      "sha256": "801fa7d4d980d9af3615a6729bf6cac8868893c708304ce7ae948e7e2f6921d2",
+      "bytes": 1753191,
+      "addedAt": "2026-11-07T08:06:33.316Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261107T075253989Z-2-chatgpt-2026-11-6-14-42-42.png",
+      "sha256": "7b738217ab62c05cff61b201934afff518651497dc3b3d5d47fa13e8f832ed87",
+      "bytes": 1717618,
+      "addedAt": "2026-11-07T08:06:33.338Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261107T105820033Z-1-mark-1.png",
+      "sha256": "f12677a62247621ba442ed6934f2575d7d0812af261eac49146c4c4e0e4d8210",
+      "bytes": 415766,
+      "addedAt": "2026-11-07T10:58:26.620Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261107T123005166Z-1-image.png",
+      "sha256": "a8675cfc19e70099fcc355706f91ca7b36cce638e5d304e778532af30c8f5b55",
+      "bytes": 75609,
+      "addedAt": "2026-11-07T12:37:40.593Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261107T130039575Z-1-mark-1.png",
+      "sha256": "73afdf088051b7a20c303d1f30bfce2dc1b5159492e74b8e5d871200d1909a38",
+      "bytes": 827224,
+      "addedAt": "2026-11-07T13:00:45.002Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261107T140705648Z-1-mark-1.png",
+      "sha256": "b2f6ba7f4218012385c61afc2b9182492efea0479d0d3762bb811dbcc6b7ea9d",
+      "bytes": 598654,
+      "addedAt": "2026-11-07T14:07:14.220Z",
       "share": false
     }
   ]

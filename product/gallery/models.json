@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "models": [
+    {
+      "file": "models/clock.glb",
+      "design": "clock"
+    },
+    {
+      "file": "models/clock_recovered.glb",
+      "design": "clock_recovered"
+    }
+  ]
+}

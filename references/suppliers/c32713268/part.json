@@ -1,0 +1,94 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-09T20:53:37.017Z",
+  "lcsc_code": "C32713268",
+  "manufacturer": "hanxia(韩下)",
+  "manufacturer_part_number": "HX PZ2.54-1x2P ZZ",
+  "description": "Pin Header 2 Position 2.54mm Pitch Single Row Through Hole -40°C~+105°C",
+  "category": "排针",
+  "package": "Through Hole,P=2.54mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Connector Type": "Through Hole",
+    "Voltage Rating (Max)": "1kV",
+    "Contact Material": "Brass",
+    "Number of Rows": "1",
+    "Pitch": "2.54mm",
+    "Circluar Pins/Square Pins": "Square pin",
+    "Current Rating": "3A",
+    "Insulation Height": "2.5mm",
+    "Length of Mating Pin": "6mm",
+    "Number of PINs": "2P",
+    "Operating Temperature": "-40°C~+105°C",
+    "Contact Plating": "Gold",
+    "Length of End Connection Pin": "3mm",
+    "Color": "Black",
+    "Pin Structure": "1x2P"
+  },
+  "lcsc_stock": 35298,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 0.0945,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.0733,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.0615,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0544,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.0475,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0441,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.0157,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.0122,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.0102,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.009,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.0079,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0073,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/34444548.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/43f6dde0f8f3bfba2307564435fe9931.pdf?productCode=C32713268",
+  "datasheet_file": "references/suppliers/c32713268/c32713268-datasheet.pdf"
+}

@@ -1,0 +1,95 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-09T20:49:37.403Z",
+  "lcsc_code": "C52917434",
+  "manufacturer": "worldsemi",
+  "manufacturer_part_number": "WS2812B-2020-V6",
+  "description": "智能外控集成LED光源,内置信号整形和复位电路,支持单线通讯,颜色一致性好",
+  "category": "RGB LED(内置IC)",
+  "package": "SMD2020-4P",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Voltage - Supply": "3.3V~5.3V",
+    "Data Transmission Rate": "800Kbit/s",
+    "Fixed-Frequency Pwm Mode": "2kHz",
+    "Length": "2mm",
+    "Height": "0.84mm",
+    "Dominant Wavelength - R": "620nm~625nm",
+    "Width": "2mm",
+    "Dominant Wavelength - B": "465nm~470nm",
+    "Dominant Wavelength - G": "515nm~520nm",
+    "Fall Time": "120us",
+    "Operating Temperature": "-40°C~+85°C",
+    "Features": "Built-in power-on reset circuit;Built-in power-on reset circuit;Integrated intelligent reverse connection protection function",
+    "Quiescent Current": "1uA",
+    "Luminous Intensity - R": "200mcd",
+    "Luminous Intensity - B": "160mcd",
+    "Luminous Intensity - G": "520mcd"
+  },
+  "lcsc_stock": 172079,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 0.5587,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.4495,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.3934,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.3471,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.331,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 4500,
+      "unitPrice": 0.32,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.0923,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.0743,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.065,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0574,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.0547,
+      "currency": "USD"
+    },
+    {
+      "quantity": 4500,
+      "unitPrice": 0.0529,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/55827425.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/a29e59ba4bc7e47e236b4d50b6c26345.pdf?productCode=C52917434",
+  "datasheet_file": "references/suppliers/c52917434/c52917434-datasheet.pdf"
+}

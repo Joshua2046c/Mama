@@ -1,13 +1,17 @@
 {
   "formatVersion": 4,
-  "name": "可收纳座钟",
-  "title": "座挂两用钟",
-  "summary": "将圆形挂钟与收纳底座结合，让查看时间和整理小物的功能融于一体，钟可通过滑轨拆下挂于墙上，背面设有磁吸开盖结构，便于更换电池",
+  "name": "Mama 时钟",
+  "title": "Viebocding Clock",
+  "summary": "A desktop sync clock built for makers who live in the flow. Viebocding translates your project milestones into a living, breathing clock face.",
   "license": "MIT",
   "authors": [
     {
       "name": "Miles"
     }
   ],
+  "upstream": {
+    "repo": "https://github.com/Joshua2046c/replicator-project",
+    "commit": "ece7d04b31bc17aa37db9cb7ceb58088fc28e18e"
+  },
   "artifacts": "rebuild"
 }

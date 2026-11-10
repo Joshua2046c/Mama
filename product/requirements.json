@@ -1,7 +1,7 @@
 {
   "requirements": {
     "product_class": {
-      "value": "mechanical",
+      "value": "electromechanical",
       "source": "default"
     },
     "parts": {
@@ -20,7 +20,7 @@
       "source": "user"
     },
     "dial_shape": {
-      "value": "Flat underlying hand-sweep surface with raised white dial markings per latest reference; slightly upturned outer edge nested in clock body",
+      "value": "原平整指针扫掠面及翘边嵌套结构保持；正面按新参考图设置格子图案和透光窗。",
       "source": "user"
     },
     "hand_length_mm": {
@@ -32,7 +32,7 @@
       "source": "default"
     },
     "base_board": {
-      "value": "无控制板，独立电池石英钟芯",
+      "value": "Seeed Studio XIAO ESP32C3 (seeed/xiao-esp32c3) with custom RGB carrier and perpendicular USB-C power-entry PCB",
       "source": "default"
     },
     "movement_shaft_length_mm": {
@@ -123,7 +123,7 @@
       "source": "default"
     },
     "dial_markings": {
-      "value": "White raised clock markings following the supplied image",
+      "value": "白底红色细方格、蓝色数字及分钟刻度、12/3/6/9红色整点方块，参照两张上传图。",
       "source": "user"
     },
     "dial_markings_layout": {
@@ -135,20 +135,16 @@
       "source": "default"
     },
     "dial_markings_height_mm": {
-      "value": 0.6,
-      "source": "default"
+      "value": 0.2,
+      "source": "user"
     },
     "hand_minimum_underside_height_mm": {
       "value": 1.1,
       "source": "default"
     },
     "numeral_style": {
-      "value": "Strictly reproduce numeral outlines from the supplied reference image, including thin strokes, rounded ends, open shapes and the smaller round zero in 10; slightly reduce overall size",
+      "value": "改用本次参考图的粗蓝色正向1–12数字，不再沿用旧参考图的白色细轮廓数字。",
       "source": "user"
-    },
-    "numeral_height_nominal_mm": {
-      "value": 25,
-      "source": "default"
     },
     "body_rear_radius_mm": {
       "value": 7,
@@ -179,7 +175,7 @@
       "source": "default"
     },
     "dial_component_structure": {
-      "value": "盘面、数字和刻度必须实体融合为一个连续实体，不能作为独立零件移动；保留原图字形、60个凸起刻度和0.6 mm浮雕高度。",
+      "value": "网格、数字、Makit标识、分钟与整点刻度及装饰图案全部与表盘基体一体融合，不是独立附件或印刷参考实体；仅十枚RGB扩散窗为独立光学件。",
       "source": "user"
     },
     "slide_minimum_clearance_mm": {
@@ -199,7 +195,7 @@
       "source": "user"
     },
     "battery_hatch_mechanism": {
-      "value": "钟背中央磁吸可拆盖，上缘中央仅一对磁铁位，孔径7.26 mm、深1.26 mm；壳体下方取消半圆凹陷，盖子下缘改长方形扣手槽。",
+      "value": "钟背中央磁吸可拆盖，上缘中央仅一对磁铁位，孔径7.1 mm、深1.1 mm；壳体下方取消半圆凹陷，盖子下缘改长方形扣手槽。",
       "source": "user"
     },
     "battery_hatch_service": {
@@ -247,7 +243,7 @@
       "source": "user"
     },
     "actual_minimum_internal_depth_mm": {
-      "value": 20.4,
+      "value": 19.2,
       "source": "default"
     },
     "display_layout": {
@@ -264,8 +260,8 @@
     },
     "cover_magnet_pocket_mm": {
       "value": {
-        "diameter": 7.26,
-        "depth": 1.26
+        "diameter": 7.1,
+        "depth": 1.1
       },
       "source": "user"
     },
@@ -348,13 +344,6 @@
       "value": 2.8,
       "source": "default"
     },
-    "magnet_pocket_increment_mm": {
-      "value": {
-        "diameter": 0.16,
-        "depth": 0.16
-      },
-      "source": "user"
-    },
     "dial_magnetic_mount": {
       "value": {
         "clock_positions": [
@@ -383,6 +372,151 @@
     },
     "dial_magnet_inward_shift_mm": {
       "value": 1.5,
+      "source": "user"
+    },
+    "design_direction": {
+      "value": "参考上传图片：白色盘面、细红方格、蓝色正向数字、四个红色整点方块、银色外圈；保留原伸颈收纳底座及连接机构，内部新增进度灯电子组件。",
+      "source": "user"
+    },
+    "product_function": {
+      "value": "记录电脑上vibecoding进度完成情况，电脑软件由用户编写，时钟通过同一局域网接收状态并显示。",
+      "source": "user"
+    },
+    "progress_lights": {
+      "value": {
+        "quantity": 10,
+        "type": "individually addressable RGB",
+        "arrangement": [
+          2,
+          5
+        ],
+        "location": "正面钟心上方参考图位置",
+        "symmetry": "关于12点至6点竖直中线镜像；每个灯心与方格中心重合"
+      },
+      "source": "user"
+    },
+    "progress_light_layout_mm": {
+      "value": {
+        "grid_pitch": 7,
+        "led_pitch_x": 14,
+        "led_pitch_y": 14,
+        "x": [
+          -28,
+          -14,
+          0,
+          14,
+          28
+        ],
+        "y": [
+          31.5,
+          45.5
+        ],
+        "diffuser_window": 6.2
+      },
+      "source": "default"
+    },
+    "network": {
+      "value": "2.4 GHz Wi-Fi，同一局域网，本地网页配置及本地HTTP JSON接口，无需云端。",
+      "source": "default"
+    },
+    "power_options_allowed": {
+      "value": "新增电子部分可采用内置电池或者Type-C额外直插供电。",
+      "source": "user"
+    },
+    "electronics_power": {
+      "value": "采用5 V USB Type-C直供；新增电子部分不共用石英钟芯AA电池，不配置锂电池及充电电路。",
+      "source": "default"
+    },
+    "cable_path": {
+      "value": "只有钟体装到底座上时才连接外部供电线：从底座收纳掏空位置内侧插入钟体隐藏接口，线在底座内部向下，从底座下方掏空出线口引出。",
+      "source": "user"
+    },
+    "custom_pcb": {
+      "value": "设计可制造的专用RGB灯板及配套控制供电电路，全部集成于表盘/钟壳内，不改变原机芯尺寸。",
+      "source": "user"
+    },
+    "progress_defaults": {
+      "value": {
+        "index_order": "top row left-to-right 0–4, bottom row left-to-right 5–9",
+        "statuses": {
+          "idle": "off",
+          "queued": "white",
+          "running": "yellow",
+          "complete": "green",
+          "error": "red"
+        },
+        "disconnect_timeout_s": 30,
+        "disconnect_behavior": "保留末次状态并低亮脉冲提示",
+        "brightness_cap_percent": 25
+      },
+      "source": "default"
+    },
+    "acceptance_electronics": {
+      "value": "10灯可独立RGB调光；同LAN可配置、查询与更新状态；断网重连；USB-C正反插供电；机芯独立运行；PCB完成布线/DRC及制造导出；验证安装、避光与底座穿线路径。",
+      "source": "default"
+    },
+    "numeral_font_size_mm": {
+      "value": 29,
+      "source": "default"
+    },
+    "added_optical_parts": {
+      "value": "十枚独立半透扩散窗和一件黑色遮光隔仓；其余网格、字、刻度与表盘为一体凸起实体。",
+      "source": "default"
+    },
+    "grid_relief_height_mm": {
+      "value": 0.1,
+      "source": "user"
+    },
+    "grid_line_width_mm": {
+      "value": 0.4,
+      "source": "default"
+    },
+    "cardinal_markers": {
+      "value": "12、3、6、9点均无灯，用稍大的实心长条方块刻度替代。",
+      "source": "user"
+    },
+    "cardinal_marker_size_mm": {
+      "value": {
+        "tangential_width": 4.5,
+        "radial_length": 11
+      },
+      "source": "default"
+    },
+    "light_opening_matches_grid_cell": {
+      "value": "十个灯珠开孔扩大到与各自方格内部净尺寸相同，中心位置及轴对称布局保持。",
+      "source": "user"
+    },
+    "light_aperture_size_mm": {
+      "value": 6.6,
+      "source": "default"
+    },
+    "movement_locating_outline": {
+      "value": {
+        "location": "表盘背面内部",
+        "shape": "圆角矩形",
+        "length_mm": 56
+      },
+      "source": "user"
+    },
+    "movement_locating_defaults": {
+      "value": {
+        "width_mm": 56,
+        "corner_radius_mm": 3,
+        "line_width_mm": 0.5,
+        "engraving_depth_mm": 0.2,
+        "center": [
+          0,
+          0
+        ]
+      },
+      "source": "default"
+    },
+    "internal_mount_reservations": {
+      "value": "表壳内部预留电路板与电池的固定位置。",
+      "source": "user"
+    },
+    "battery_mount_scope": {
+      "value": "沿用机芯自带电池及其电池槽，保留中央后盖的换电池入口；这部分供电不在本次改动范围。",
       "source": "user"
     }
   },

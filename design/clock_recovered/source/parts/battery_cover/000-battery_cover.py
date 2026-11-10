@@ -1,0 +1,47 @@
+# recovery_step: exact solid 3 from STEP SHA256 5ace57df0fda9a15847270cbe66048984c366595415927b0751c0765d7b14559.
+# Embedded analytic topology preserves curved surfaces and avoids a duplicate published import.
+from io import BytesIO
+import base64, zlib, hashlib
+from OCP.BRepTools import BRepTools
+from OCP.BRep import BRep_Builder
+from OCP.TopoDS import TopoDS_Shape
+_encoded_brep = """
+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
+"""
+_raw_brep=zlib.decompress(base64.b64decode(_encoded_brep))
+assert hashlib.sha256(_raw_brep).hexdigest()=="7d2f7ad287951287449887d1cdbd7e425cf2ad78d036b893de1f788e1ca56e29"
+_wrapped=TopoDS_Shape()
+BRepTools.Read_s(_wrapped,BytesIO(_raw_brep),BRep_Builder())
+source=Solid(_wrapped)
+assert source.is_valid and len(source.solids())==1
+j=part("body")
+cover_z=param("cover_position_z",0.0)
+# Fill the original 7.26 x 1.26 pocket, then create the current shared hole.
+cover=source+Pos(0,23,0.92)*Cylinder(3.68,1.28,align=(Align.CENTER,Align.CENTER,Align.MIN))
+cover=cover-Pos(0,j.magnet_y,2.2-j.pocket_depth)*Cylinder(j.pocket_d/2,j.pocket_depth+0.02,align=(Align.CENTER,Align.CENTER,Align.MIN))
+cover=Pos(0,0,cover_z)*cover
+assert cover.is_valid and len(cover.solids())==1
+assert 2.2-j.pocket_depth>=1
+cover.color=srgb("#B6B8BB")
+publish("battery_cover",cover,"磁吸电池盖",material="petg")

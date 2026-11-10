@@ -1,0 +1,83 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-09T20:51:42.477Z",
+  "lcsc_code": "C15850",
+  "manufacturer": "SAMSUNG(三星)",
+  "manufacturer_part_number": "CL21A106KAYNNNE",
+  "description": "10uF ±10% 25V Ceramic Capacitor X5R 0805",
+  "category": "贴片电容(MLCC)",
+  "package": "0805",
+  "jlcpcb_part_class": "basic",
+  "parameters": {
+    "Capacitance": "10uF",
+    "Temperature Coefficient": "X5R",
+    "Tolerance": "±10%",
+    "Voltage Rating": "25V"
+  },
+  "lcsc_stock": 89203,
+  "price_breaks": [
+    {
+      "quantity": 20,
+      "unitPrice": 0.1917,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 200,
+      "unitPrice": 0.1439,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 600,
+      "unitPrice": 0.1226,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.1067,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.1003,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 20000,
+      "unitPrice": 0.096,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 20,
+      "unitPrice": 0.0317,
+      "currency": "USD"
+    },
+    {
+      "quantity": 200,
+      "unitPrice": 0.0238,
+      "currency": "USD"
+    },
+    {
+      "quantity": 600,
+      "unitPrice": 0.0203,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.0177,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.0166,
+      "currency": "USD"
+    },
+    {
+      "quantity": 20000,
+      "unitPrice": 0.0159,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/16532.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C15850",
+  "datasheet_file": null
+}

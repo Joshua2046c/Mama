@@ -1,0 +1,83 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-09T20:52:50.890Z",
+  "lcsc_code": "C1591",
+  "manufacturer": "SAMSUNG(三星)",
+  "manufacturer_part_number": "CL10B104KB8NNNC",
+  "description": "100nF ±10% 50V Ceramic Capacitor X7R 0603",
+  "category": "贴片电容(MLCC)",
+  "package": "0603",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Capacitance": "100nF",
+    "Temperature Coefficient": "X7R",
+    "Tolerance": "±10%",
+    "Voltage Rating": "50V"
+  },
+  "lcsc_stock": 9288,
+  "price_breaks": [
+    {
+      "quantity": 100,
+      "unitPrice": 0.0435,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.033,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.0284,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 8000,
+      "unitPrice": 0.0249,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 48000,
+      "unitPrice": 0.0235,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100000,
+      "unitPrice": 0.0226,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.0072,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.0055,
+      "currency": "USD"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.0047,
+      "currency": "USD"
+    },
+    {
+      "quantity": 8000,
+      "unitPrice": 0.0042,
+      "currency": "USD"
+    },
+    {
+      "quantity": 48000,
+      "unitPrice": 0.0039,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100000,
+      "unitPrice": 0.0038,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/1943.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C1591",
+  "datasheet_file": null
+}

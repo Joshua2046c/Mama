@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "title": "Hidden USB-C power entry",
+  "manufacturing": {
+    "name": "ordinary-2layer-fr4-1oz",
+    "layers": 2,
+    "copperThicknessOz": {
+      "outer": 1
+    },
+    "finishedThicknessMm": 1.6,
+    "defaultTraceWidthMm": 0.3,
+    "absoluteMinimumTraceWidthMm": 0.2,
+    "absoluteMinimumCopperClearanceMm": 0.15,
+    "preferredRoutingClearanceMm": 0.25,
+    "copperToBoardEdgeMm": 1,
+    "via": {
+      "diameterMm": 0.6,
+      "drillMm": 0.3
+    },
+    "waveSolderVia": {
+      "diameterMm": 0.8,
+      "drillMm": 0.4
+    }
+  },
+  "netClasses": {
+    "signal": {
+      "nominalWidthMm": 0.3,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "cpu_io": {
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "power": {
+      "nominalWidthMm": 0.5,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "high_current": {
+      "nominalWidthMm": 0.5,
+      "minimumWidthMm": 0.4572,
+      "clearanceMm": 0.25
+    },
+    "ground": {
+      "nominalWidthMm": 0.5,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "sensitive_analog": {
+      "nominalWidthMm": 0.3,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "clock_high_speed": {
+      "nominalWidthMm": 0.3,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "differential_pair": {
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.25
+    }
+  },
+  "nets": {
+    "V5": {
+      "class": "power",
+      "nominalWidthMm": 0.5,
+      "minimumWidthMm": 0.25,
+      "rationale": "0.86A combined budget (ten pixels at 0.36A plus WiFi/transient allowance 0.5A); 0.5mm 1oz external copper supports this at 10C IPC-2221 rise and fits the supplier 0.6mm VBUS lands. Previous 0.8mm DSN width could not enter the left VBUS land; no manufacturing limit was relaxed."
+    },
+    "GND": {
+      "class": "ground"
+    },
+    "CC1": {
+      "class": "signal"
+    },
+    "CC2": {
+      "class": "signal"
+    }
+  },
+  "footprintExceptions": [],
+  "copperPours": {
+    "enabled": true,
+    "groundLayers": [
+      "top",
+      "bottom"
+    ],
+    "clearanceMm": 0.3,
+    "padMarginMm": 0.3,
+    "traceMarginMm": 0.3,
+    "boardEdgeMarginMm": 1,
+    "cutoutMarginMm": 0.5,
+    "removeIslands": true
+  },
+  "stitchingVias": [],
+  "copperAreas": [],
+  "keepouts": [],
+  "allowedOverlaps": [],
+  "allowedViaInPadComponents": [],
+  "pcbRuleExceptions": [],
+  "componentOrientations": [
+    {
+      "componentRef": "J_USB",
+      "nativeOpening": "down",
+      "targetOpening": "down",
+      "expectedLayer": "top",
+      "rationale": "Port mouth faces rear exterior after board is mounted perpendicular to clock back."
+    },
+    {
+      "componentRef": "J_OUT",
+      "vertical": true,
+      "rationale": "Internal 2-wire power harness only."
+    }
+  ],
+  "bomBindings": [
+    {
+      "bomItemId": "usb_c",
+      "designators": [
+        "J_USB"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "usb_rd",
+      "designators": [
+        "R_CC1",
+        "R_CC2"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "bulk",
+      "designators": [
+        "C13"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "power_headers",
+      "designators": [
+        "J_OUT"
+      ],
+      "populate": true
+    }
+  ]
+}

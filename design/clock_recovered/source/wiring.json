@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "parts": [
+    {
+      "ref": "U_XIAO",
+      "platform": "seeed/xiao-esp32c3",
+      "quantity": 1
+    },
+    {
+      "ref": "PCB_MAIN",
+      "name": "Custom RGB progress carrier",
+      "quantity": 1
+    },
+    {
+      "ref": "PCB_PWR",
+      "name": "Custom USB-C power entry",
+      "quantity": 1
+    },
+    {
+      "ref": "M1",
+      "name": "Independent AA quartz movement, 14 mm shaft",
+      "quantity": 1
+    }
+  ],
+  "connections": [
+    {
+      "from": {
+        "part": "U_XIAO",
+        "pin": "D10"
+      },
+      "to": {
+        "part": "PCB_MAIN",
+        "pin": "DATA_3V3"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://files.seeedstudio.com/wiki/XIAO_WiFi/XIAO_ESP32-C3_front_pinout.png"
+      ]
+    },
+    {
+      "from": {
+        "part": "PCB_PWR",
+        "pin": "5V"
+      },
+      "to": {
+        "part": "PCB_MAIN",
+        "pin": "5V"
+      },
+      "bus": "power",
+      "via": "other",
+      "evidence": [
+        "https://atta.szlcsc.com//upload/public/pdf/source/20220525/466408E853115E789EDB0DDC29077C05.pdf"
+      ]
+    },
+    {
+      "from": {
+        "part": "PCB_PWR",
+        "pin": "GND"
+      },
+      "to": {
+        "part": "PCB_MAIN",
+        "pin": "GND"
+      },
+      "bus": "power",
+      "via": "other",
+      "evidence": [
+        "https://atta.szlcsc.com//upload/public/pdf/source/20220525/466408E853115E789EDB0DDC29077C05.pdf"
+      ]
+    },
+    {
+      "from": {
+        "part": "PCB_MAIN",
+        "pin": "5V_DIODE_ISOLATED"
+      },
+      "to": {
+        "part": "U_XIAO",
+        "pin": "5V"
+      },
+      "bus": "power",
+      "via": "solder",
+      "evidence": [
+        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_Getting_Started.md"
+      ]
+    },
+    {
+      "from": {
+        "part": "PCB_MAIN",
+        "pin": "GND"
+      },
+      "to": {
+        "part": "U_XIAO",
+        "pin": "GND"
+      },
+      "bus": "power",
+      "via": "solder",
+      "evidence": [
+        "https://files.seeedstudio.com/wiki/XIAO_WiFi/XIAO_ESP32-C3_front_pinout.png"
+      ]
+    }
+  ]
+}

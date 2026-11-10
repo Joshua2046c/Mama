@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "units": "mm",
-  "coordinateFrame": "replicator-world-z-up",
+  "coordinateFrame": "makit-world-z-up",
   "targets": [
     {
       "id": "base",
@@ -107,7 +107,7 @@
       "label": "Extended neck base",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "26505926b61e9c7e46d4f42b0d8acf06face3c07df56da963ec433f10936305e",
+      "shapeHash": "8738a590cb52df82d621f95ad9d7ee3e2a23c3f313e8f8a7e7f4845e02b86fa8",
       "transform": {
         "positionMm": [
           190,
@@ -134,7 +134,7 @@
       "label": "Recessed clock body",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "419dda91122c95904ab9ecfda93304bf8223053373839d265dc804a6384b9255",
+      "shapeHash": "bd69c95f8b4b97bf02321c74f7aec23ed49309391c775ad8d4ff48a54921cafa",
       "transform": {
         "positionMm": [
           0,
@@ -161,7 +161,7 @@
       "label": "一体表盘",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "09569276ba12ea7813cd77018272bb93a34d45f103b2b6f7fbacb8cb5eb59f44",
+      "shapeHash": "24059898db6ffb1c05cb41d880d69e5bc832e7edf38f54bd236e44082b259339",
       "transform": {
         "positionMm": [
           0,
@@ -188,7 +188,7 @@
       "label": "Magnetic battery cover",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "b8c0c1d1cc8fbe8d213faaa295db78e8c05b393d9e46aa5de9c1eeaa5049b9d7",
+      "shapeHash": "57a0062e947803a88ae9a8de708f11ba08760bb5aaec9a2e4fad47cde568a0f2",
       "transform": {
         "positionMm": [
           0,
@@ -215,7 +215,7 @@
       "label": "Left bonded slide",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "0432c3e8b9dc3fefee39c0c50e717795a4b7d356faba5a773660a2dd98b3f2ac",
+      "shapeHash": "df6b6716ce16dde1e05201135f1d4a3f57d1b998978674ca3ae14d34f9d08d66",
       "transform": {
         "positionMm": [
           -35,
@@ -242,7 +242,7 @@
       "label": "Right bonded slide",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "05a4b98588d0c1eacadef69b6eaa5225842e2523e6854a740b4bb48a28a6dcad",
+      "shapeHash": "f9662978c7cfec3d8831b963c68c8e0d13107f096ebdc13d63e0c45d75bddfb3",
       "transform": {
         "positionMm": [
           35,
@@ -266,7 +266,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-10-21T18:04:07.801Z",
+  "updatedAt": "2026-11-09T21:41:08.306Z",
   "parameters": {
     "base": {
       "base_width": 90,

@@ -1,0 +1,148 @@
+{
+  "observed_on": "2026-11-07",
+  "status": "blocked_runtime_coordinate_conversion",
+  "boards": [
+    {
+      "design": "progress",
+      "files": {
+        ".work/pcb/progress/build/circuit.json": "8774f33f8589ac709169130c26abd64d2a99fd3fa01d8cf5dcca92afb71a09d8",
+        ".work/pcb/progress/kicad/progress.kicad_pcb": "0500b431b2d5e128fe48f014a4a131591302d68f5a5affcf836ec268320f3f80"
+      },
+      "calibration_comparison": {
+        "origin": {
+          "translation_mm": [
+            -100.0,
+            100.0
+          ],
+          "matches": 28,
+          "max_residual_mm": 1.4210854715202004e-14
+        },
+        "center": {
+          "translation_mm": [
+            -100.0,
+            99.95464285714287
+          ],
+          "matches": 28,
+          "max_residual_mm": 1.224642857142868
+        }
+      },
+      "noncoincident_origins": [
+        {
+          "ref": "J_PWR",
+          "layer": "bottom",
+          "kicad_at": [
+            128.0,
+            26.73
+          ],
+          "footprint_origin": {
+            "x": 28,
+            "y": 73.27000000000001
+          },
+          "geometric_center": {
+            "x": 28,
+            "y": 72
+          },
+          "origin_translation": [
+            -100.0,
+            100.00000000000001
+          ],
+          "center_translation": [
+            -100.0,
+            98.73
+          ]
+        }
+      ],
+      "independent_kicad_drc": {
+        "errors": 0,
+        "warnings": 18,
+        "unconnected": 0
+      }
+    },
+    {
+      "design": "power_entry",
+      "files": {
+        ".work/pcb/power_entry/build/circuit.json": "db2c733e7a035cb0455ec17b2af71548b86d858e9870edf59d7d6b728af72baa",
+        ".work/pcb/power_entry/kicad/power_entry.kicad_pcb": "8dfb1f87ee57f90a39caabf5a080bfa130bd23d1c0652e08dcb48df4e4ddf431"
+      },
+      "calibration_comparison": {
+        "origin": {
+          "translation_mm": [
+            -100.0,
+            100.0
+          ],
+          "matches": 5,
+          "max_residual_mm": 0.0
+        },
+        "center": {
+          "translation_mm": [
+            -100.00000000000003,
+            99.66100018
+          ],
+          "matches": 5,
+          "max_residual_mm": 0.9310001799999981
+        }
+      },
+      "noncoincident_origins": [
+        {
+          "ref": "J_USB",
+          "layer": "top",
+          "kicad_at": [
+            100.0,
+            103.3
+          ],
+          "footprint_origin": {
+            "x": 0,
+            "y": -3.3
+          },
+          "geometric_center": {
+            "x": 0,
+            "y": -3.7249991000000224
+          },
+          "origin_translation": [
+            -100.0,
+            100.0
+          ],
+          "center_translation": [
+            -100.0,
+            99.57500089999998
+          ]
+        },
+        {
+          "ref": "J_OUT",
+          "layer": "top",
+          "kicad_at": [
+            107.5,
+            94.73
+          ],
+          "footprint_origin": {
+            "x": 7.5,
+            "y": 5.27
+          },
+          "geometric_center": {
+            "x": 7.5,
+            "y": 4
+          },
+          "origin_translation": [
+            -100.0,
+            100.0
+          ],
+          "center_translation": [
+            -100.0,
+            98.73
+          ]
+        }
+      ],
+      "independent_kicad_drc": {
+        "errors": 0,
+        "warnings": 0,
+        "unconnected": 0
+      }
+    }
+  ],
+  "led_window_alignment": {
+    "max_center_delta_mm": 5.684341886080802e-14,
+    "tolerance_mm": 1e-09,
+    "passed": true,
+    "symmetric_about_x_zero": true
+  }
+}

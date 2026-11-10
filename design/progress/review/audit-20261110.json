@@ -1,0 +1,251 @@
+{
+  "review_date": "2026-11-10",
+  "review_status": "blocked_for_fabrication",
+  "visual_review": "partial",
+  "boards": [
+    {
+      "design": "progress",
+      "files": {
+        ".work/pcb/progress/build/circuit.json": "3692fe571ea17ed310790076ebba928f3b953513e0d22a4b76c97433755bfb12",
+        ".work/pcb/progress/kicad/progress.kicad_pcb": "57c79c0789dd90483210805d84524f68a0b44e16ab211cc17e9ead36533594e2"
+      },
+      "calibration_comparison": {
+        "origin": {
+          "translation_mm": [
+            -100.0,
+            100.0
+          ],
+          "matches": 28,
+          "max_residual_mm": 1.4210854715202004e-14
+        },
+        "center": {
+          "translation_mm": [
+            -100.0,
+            99.95464285714287
+          ],
+          "matches": 28,
+          "max_residual_mm": 1.224642857142868
+        }
+      },
+      "noncoincident_origins": [
+        {
+          "ref": "J_PWR",
+          "layer": "bottom",
+          "kicad_at": [
+            128.0,
+            26.73
+          ],
+          "footprint_origin": {
+            "x": 28,
+            "y": 73.27000000000001
+          },
+          "geometric_center": {
+            "x": 28,
+            "y": 72
+          },
+          "origin_translation": [
+            -100.0,
+            100.00000000000001
+          ],
+          "center_translation": [
+            -100.0,
+            98.73
+          ]
+        }
+      ],
+      "independent_kicad_drc": {
+        "errors": 0,
+        "warnings": 18,
+        "unconnected": 0
+      },
+      "drc_report": {
+        "path": ".work/pcb/progress/reports/audit-20261110-drc.json",
+        "sha256": "3625534f38fa9b9b40875336b26c076994e30a4f0ad50ac93bf5ba2d144e662f"
+      },
+      "drc_unconnected_details": [],
+      "source_sha256": {
+        "design/progress/source/main.tsx": "924b6ddc9de8347a6f3af4b011e00ddcc4e9f58405b980ba4cb18a934598e237",
+        "design/progress/source/pcb.config.json": "3b4699cdd30633b98533f1e7b7c80c98b159e30bb5f3c14ff0c34ec743ee31b6",
+        "design/progress/source/layout.ts": "848285e8a4eb14e108d74933fa28d700fd2cc0c86690fb56920c21b97b55dc63"
+      }
+    },
+    {
+      "design": "power_entry",
+      "files": {
+        ".work/pcb/power_entry/build/circuit.json": "c04d6af435cf7b7eb9ecbaf7a094cb496df6601f1d474cc2324dcbe0330b37e5",
+        ".work/pcb/power_entry/kicad/power_entry.kicad_pcb": "1f90157f7fc3558be05fd53c1f4c2f7b708169380e135c9d95be42bbc222eabe"
+      },
+      "calibration_comparison": {
+        "origin": {
+          "translation_mm": [
+            -100.0,
+            100.0
+          ],
+          "matches": 5,
+          "max_residual_mm": 0.0
+        },
+        "center": {
+          "translation_mm": [
+            -100.00000000000003,
+            99.66100018
+          ],
+          "matches": 5,
+          "max_residual_mm": 0.9310001799999981
+        }
+      },
+      "noncoincident_origins": [
+        {
+          "ref": "J_USB",
+          "layer": "top",
+          "kicad_at": [
+            100.0,
+            103.3
+          ],
+          "footprint_origin": {
+            "x": 0,
+            "y": -3.3
+          },
+          "geometric_center": {
+            "x": 0,
+            "y": -3.7249991000000224
+          },
+          "origin_translation": [
+            -100.0,
+            100.0
+          ],
+          "center_translation": [
+            -100.0,
+            99.57500089999998
+          ]
+        },
+        {
+          "ref": "J_OUT",
+          "layer": "top",
+          "kicad_at": [
+            107.5,
+            94.73
+          ],
+          "footprint_origin": {
+            "x": 7.5,
+            "y": 5.27
+          },
+          "geometric_center": {
+            "x": 7.5,
+            "y": 4
+          },
+          "origin_translation": [
+            -100.0,
+            100.0
+          ],
+          "center_translation": [
+            -100.0,
+            98.73
+          ]
+        }
+      ],
+      "independent_kicad_drc": {
+        "errors": 0,
+        "warnings": 0,
+        "unconnected": 1
+      },
+      "drc_report": {
+        "path": ".work/pcb/power_entry/reports/audit-20261110-drc.json",
+        "sha256": "2f2b405e2a5b770e20e04024ab84209220d784b6b9e19ef3d5f73c313fa00e46"
+      },
+      "drc_unconnected_details": [
+        {
+          "description": "Missing connection between items",
+          "items": [
+            {
+              "description": "Zone 'makit_gnd_pour_top' [GND] 在 F.Cu 上, priority 0",
+              "pos": {
+                "x": 89.95,
+                "y": 92.95
+              },
+              "uuid": "54872026-f965-4fd5-a3f5-132651f25817"
+            },
+            {
+              "description": "Zone 'makit_gnd_pour_top' [GND] 在 F.Cu 上, priority 0",
+              "pos": {
+                "x": 89.95,
+                "y": 92.95
+              },
+              "uuid": "54872026-f965-4fd5-a3f5-132651f25817"
+            }
+          ],
+          "severity": "error",
+          "type": "unconnected_items"
+        }
+      ],
+      "source_sha256": {
+        "design/power_entry/source/main.tsx": "243c4873f9e5c233f099a871fbada2561ec28b5a49f00a1d7045be3f25fe13fa",
+        "design/power_entry/source/pcb.config.json": "8a3ca0716be0c5682b1fefc9a11036a9a0572adc3a81fcd19d175e6fa184928d",
+        "design/power_entry/source/layout.ts": "2b291e2e0f14b4baf80ecb602845ba6a2e7393dfee947e9cda66bddcf88d87bd"
+      }
+    }
+  ],
+  "source_changes": false,
+  "reviewed_circuits": [
+    "XIAO D10/GPIO10 -> AHCT1G125 -> 330ohm -> ten WS2812B-2020-V6 DI/DO chain",
+    "AHCT OE tied GND, 100k input pulldown, dedicated100nF",
+    "USB-C VBUS/GND, independent5.1k CC1/CC2 pulldowns; USB data/SBU unused",
+    "SS14 feeds XIAO VBUS, LEDs supplied from V5 directly"
+  ],
+  "datasheet_evidence": [
+    {
+      "part": "WS2812B-2020-V6",
+      "file": "references/suppliers/c52917434/c52917434-datasheet.pdf",
+      "pages_visually_reviewed": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "part": "SN74AHCT1G125DBVR",
+      "file": "references/suppliers/c7484/c7484-datasheet.pdf",
+      "pages_visually_reviewed": [
+        3,
+        4
+      ]
+    },
+    {
+      "part": "TYPE-C-31-M-12",
+      "file": "references/suppliers/c165948/c165948-datasheet.pdf",
+      "pages_visually_reviewed": [
+        1
+      ]
+    },
+    {
+      "part": "HX PZ2.54-1x2P ZZ",
+      "file": "references/suppliers/c32713268/c32713268-datasheet.pdf",
+      "pages_visually_reviewed": [
+        1
+      ]
+    }
+  ],
+  "pinout_evidence": "https://files.seeedstudio.com/wiki/XIAO_WiFi/XIAO_ESP32-C3_front_pinout.png",
+  "limitations": [
+    "Current routed observation tool rejects board/circuit freshness after the failed coordinate backport. The returned top/bottom/schematic PNGs were viewed, but are not a fully verified routed Build.",
+    "No released Gerber/drill/assembly STEP; no claim of actual populated-board enclosure fit.",
+    "Main schematic is readable at zoom but automatic arrangement is dispersed; simplify grouping before final manufacturing review.",
+    "Firmware has not been compiled/flashed or tested against the computer application."
+  ],
+  "required_repairs": [
+    {
+      "owner": "Makit PCB coordinate conversion",
+      "target": "both boards manufacturing check",
+      "detail": "Use source footprint_origin, not bounding-box center, for calibration; read-only origin fit ~0mm versus matching gate residuals. No generated artifacts or app internals were patched."
+    },
+    {
+      "owner": "power board PCB layout",
+      "target": "GND pour connectivity",
+      "detail": "One zone-to-itself unconnected finding. Report anchor is whole-zone metadata, not a via coordinate. Rescue hints identify two regions near R_CC2, but final disconnected polygon is not uniquely identified; do not add guessed vias."
+    },
+    {
+      "owner": "PCB footprint import review",
+      "target": "main board bottom components",
+      "detail": "18 lib_footprint_mismatch warnings; review bottom mirror/import normalization against exact supplier libraries before release."
+    }
+  ]
+}

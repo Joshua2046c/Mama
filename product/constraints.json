@@ -17,16 +17,29 @@
     "design_clear_cavity": [
       64,
       64,
-      20.4
+      19.2
     ],
     "design_dial_thickness": 2.4,
     "mounting": "Use supplied movement nut and washer; no screws into printed plastic",
     "service": "Slide clock off base, lift magnetic cover using lower finger notch, replace battery; no hinge.",
-    "limitations": "This envelope is a selected common class, not every movement sold as universal. No vendor STEP found.",
-    "user_total_shaft_length_mm": 14
+    "limitations": "This envelope is a selected common class, not every movement sold as universal. No vendor STEP found. Optical baffle reduces included-geometry allowance to19.2mm at top edge; exact released PCB placement and movement hardware fit remain unverified.",
+    "user_total_shaft_length_mm": 14,
+    "locating_outline": {
+      "length_mm": 56,
+      "width_mm": 56,
+      "corner_radius_mm": 3,
+      "line_width_mm": 0.5,
+      "engraving_depth_mm": 0.2,
+      "face": "dial back",
+      "centre_mm": [
+        0,
+        0
+      ],
+      "note": "Length from user; width/radius and line defaults. Projected mark, not a clamping wall."
+    }
   },
   "material": {
-    "value": "yellow PETG",
+    "value": "PETG, silver nonconductive shell/base finish, white dial, blue/red printed graphics, opal windows, black baffle",
     "source": "default"
   },
   "fitting_clearance_per_side": {
@@ -34,15 +47,25 @@
     "source": "default"
   },
   "dial_relief": {
-    "height": 0.6,
-    "tick_radius": 101,
-    "outer_tick_radius_max": 105.02,
-    "numeral_center_radius": 77,
-    "numeral_height": 25,
+    "height": 0.2,
+    "implementation": "Fused integral raised geometry on the dial solid; not separate printed overlays",
+    "font": "Arial Bold",
+    "font_size": 29,
+    "grid_pitch": 7,
+    "line_width": 0.4,
     "minimum_hand_underside_above_dial": 1.1,
-    "clearance_status": "Assembly target only; verify with actual movement and hands",
-    "numeral_style": "Outlines traced directly from supplied image; one uniform image scale of 25 mm per 180 px preserves per-label proportions",
-    "component_structure": "One watertight solid with no assembly children; integral relief rises from the 2.4 mm flat dial to 3.0 mm. White relief finish is applied by painting after printing, or by surface painting in a compatible slicer."
+    "grid_height": 0.1,
+    "cardinal_marker_size": [
+      4.5,
+      11
+    ],
+    "cardinal_markers_are_lights": false,
+    "export_representation": {
+      "kind": "single_closed_brep_solid",
+      "outer_curves": "analytic",
+      "glyph_outline_tolerance_mm": 0.001,
+      "front_grid": "continuous planar B-rep, no triangular mesh across the flat artwork"
+    }
   },
   "rounded_edges": {
     "body_rear_radius": 7,
@@ -92,14 +115,14 @@
     "plate_thickness": 2.2,
     "perimeter_gap": 0.3,
     "minimum_movement_depth": 17,
-    "actual_minimum_movement_depth": 20.4,
+    "actual_minimum_movement_depth": 19.2,
     "magnet_size": [
       7,
       1
     ],
     "magnet_pocket": [
-      7.26,
-      1.26
+      7.1,
+      1.1
     ],
     "magnet_pairs": 1,
     "magnet_centers": [
@@ -112,11 +135,11 @@
     "requires_clock_removed_from_base": true,
     "backplate_thickness": 5.6,
     "magnet_support_inner_flush": true,
-    "magnet_radial_gap": 0.13,
-    "magnet_depth_gap": 0.26,
+    "magnet_radial_gap": 0.05,
+    "magnet_depth_gap": 0.1,
     "magnet_pocket_floor_thickness": {
-      "body": 1.84,
-      "cover": 0.94
+      "body": 2.0,
+      "cover": 1.1
     }
   },
   "rear_hanger": {
@@ -196,5 +219,186 @@
     "shell_pocket_mouth_z": 25.8,
     "magnet_face_gap_if_seated_to_hole_floor": 0.4,
     "shell_seats_fully_supported_to_backplate": true
+  },
+  "progress_lights": {
+    "quantity": 10,
+    "centers_mm": [
+      [
+        -28,
+        45.5
+      ],
+      [
+        -14,
+        45.5
+      ],
+      [
+        0,
+        45.5
+      ],
+      [
+        14,
+        45.5
+      ],
+      [
+        28,
+        45.5
+      ],
+      [
+        -28,
+        31.5
+      ],
+      [
+        -14,
+        31.5
+      ],
+      [
+        0,
+        31.5
+      ],
+      [
+        14,
+        31.5
+      ],
+      [
+        28,
+        31.5
+      ]
+    ],
+    "window_size": 6.6,
+    "diffuser_face_size": 6.2,
+    "diffuser_flange_size": 7.8,
+    "diffuser_height": 2.2,
+    "baffle_bbox": [
+      76,
+      28,
+      1.15
+    ],
+    "baffle_back_z": 24.8,
+    "pcb_back_z_target": 22.8,
+    "pcb_fit_status": "preliminary_envelope_only_no_released_assembly",
+    "pcb_envelope_precheck": {
+      "mesh_tolerance_mm": 0.02,
+      "board_size_mm": [
+        80,
+        172,
+        1.6
+      ],
+      "z_mm": [
+        22.8,
+        24.4
+      ],
+      "min_clearance_mm": {
+        "baffle": 0.4,
+        "dial": 1.6,
+        "body": 17.1504
+      },
+      "not_verified": [
+        "component_models",
+        "PCB_retention",
+        "antenna",
+        "USB_insertion_path",
+        "harness_solder_clearance"
+      ]
+    },
+    "control_placement_board_mm": {
+      "U_XIAO": [
+        0,
+        66
+      ],
+      "J_PWR": [
+        28,
+        72
+      ]
+    },
+    "diffuser_flange_pocket_size": 8.0,
+    "baffle_light_opening_size": 7.0,
+    "aperture_rule": "grid_pitch minus grid_line_width; opening fits between inner edges of raised grid lines"
+  },
+  "ports": [
+    {
+      "name": "Hidden USB-C access",
+      "face": "clock rear inside base neck",
+      "center_mm": [
+        0,
+        -41.6,
+        0
+      ],
+      "cutout_mm": [
+        13.5,
+        9.5
+      ],
+      "corner_radius": 1,
+      "board": "power_entry",
+      "pcb_assembly_status": "not_released"
+    }
+  ],
+  "cable_routing": {
+    "plug_envelope_max": [
+      12,
+      8,
+      20
+    ],
+    "cable_diameter_max": 4,
+    "base_passage": [
+      16,
+      12
+    ],
+    "floor_opening": [
+      16,
+      12
+    ],
+    "bottom_channel_width": 8,
+    "bottom_channel_depth": 5,
+    "clock_assembly_transform": {
+      "rotation_x": 74,
+      "back_center_height": 168
+    },
+    "probe_mesh_tolerance_mm": 0.02,
+    "probe_min_clearances_mm": {
+      "clock_plug": 0.6439,
+      "base_plug": 1.9992,
+      "floor_plug": 1.9949,
+      "bottom_cable": 0.5047
+    },
+    "internal_harness_length_mm": 160
+  },
+  "internal_pcb_reservations": {
+    "evidence": "draft design/progress and design/power_entry source; no released PCB assembly STEP",
+    "main_board_holes_mm": [
+      [
+        -35,
+        -80
+      ],
+      [
+        35,
+        -80
+      ],
+      [
+        -35,
+        53
+      ],
+      [
+        35,
+        53
+      ]
+    ],
+    "main_board_back_z_mm": 22.8,
+    "support_land_z_mm": 22.7,
+    "locating_pin_diameter_mm": 2.1,
+    "pcb_hole_diameter_mm": 2.5,
+    "contact_land_diameter_mm": 4.4,
+    "adhesive_budget_mm": 0.1,
+    "power_board_size_mm": [
+      22,
+      16,
+      1.6
+    ],
+    "power_slot_width_mm": 1.9,
+    "power_board_center_y_mm": -40.8,
+    "power_board_z_mm": [
+      5.8,
+      21.8
+    ],
+    "fit_status": "provisional source-based reservations, needs released component-body check"
   }
 }

@@ -1,0 +1,86 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-09T20:49:32.167Z",
+  "lcsc_code": "C7484",
+  "manufacturer": "TI(德州仪器)",
+  "manufacturer_part_number": "SN74AHCT1G125DBVR",
+  "description": "三态输出,单路总线缓冲门",
+  "category": "缓冲器/驱动器/收发器",
+  "package": "SOT-23-5",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Function": "Output enable",
+    "Current - Output High(IOH)": "8mA",
+    "Voltage - Supply": "4.5V~5.5V",
+    "Series": "74AHCT",
+    "Output Type": "Tri-State",
+    "Current - Output Low(IOL)": "8mA",
+    "Number of Bits per Element": "1",
+    "Channel Type": "Unidirectional",
+    "Number of Elements": "1",
+    "Operating Temperature": "-40°C~+125°C",
+    "Quiescent Supply Current": "10uA",
+    "Propagation Delay": "6.5ns@5V,15pF"
+  },
+  "lcsc_stock": 974,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 0.6113,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.4869,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.4247,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.378,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 3000,
+      "unitPrice": 0.3168,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.1009,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.0804,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.0701,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0624,
+      "currency": "USD"
+    },
+    {
+      "quantity": 3000,
+      "unitPrice": 0.0523,
+      "currency": "USD"
+    },
+    {
+      "quantity": 6000,
+      "unitPrice": 0.0493,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/7961.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/74b1f7dfbe12452e8a365e0596ae902b.pdf?productCode=C7484",
+  "datasheet_file": "references/suppliers/c7484/c7484-datasheet.pdf"
+}

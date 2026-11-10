@@ -1,8 +1,8 @@
 {
   "version": 2,
   "artifact_level": "assembly",
-  "deliverable_intent": "printable_part",
-  "summary": "Storage clock with independent bonded slides, single-pair magnetic rear cover and rectangular lower finger notch",
+  "deliverable_intent": "manufacturing_package",
+  "summary": "LAN vibecoding progress clock with ten symmetric RGB windows and hidden USB-C cable routing, preserving the quartz movement and slide mount",
   "required_interfaces": [
     {
       "id": "slide_mount",
@@ -14,7 +14,7 @@
     {
       "id": "dial_nest",
       "kind": "internal_fit",
-      "description": "微翘边盘面嵌入钟体；壳内环形承托台阶下方垂直填实到背板，取消悬空薄台阶。 盘面背面12/3/6/9点各一孔Ø7.1×深1.1 mm，与钟壳四个磁铁位对应；四对磁铁用于盘面拆装。",
+      "description": "平盘面及原磁吸嵌套保持，正面改白底红网格蓝字；上方十个RGB窗按2×5排列且灯心和格子中心左右对称。",
       "source": "user_requested",
       "required": true
     },
@@ -28,7 +28,7 @@
     {
       "id": "battery_hatch",
       "kind": "mechanical_joint",
-      "description": "中央58x58 mm R3磁吸可拆盖，上缘居中一对磁铁位，壳体与盖子各一孔Ø7.26x1.26 mm；下缘15x2 mm长方形扣手槽，取消壳体外侧半圆凹陷 磁铁座内侧与背板内部表面齐平，机芯腔净深至少17 mm。",
+      "description": "中央58x58 mm R3磁吸可拆盖，上缘居中一对磁铁位，壳体与盖子各一孔Ø7.1x1.1 mm；下缘15x2 mm长方形扣手槽，取消壳体外侧半圆凹陷 磁铁座内侧与背板内部表面齐平，机芯腔净深至少17 mm。",
       "source": "user_requested",
       "required": true
     },
@@ -36,6 +36,20 @@
       "id": "wall_hanger",
       "kind": "mechanical_joint",
       "description": "背面居中上方钥匙孔挂钉槽，内侧周围设圆角矩形凹位，凹深为实际背板厚度的一半。",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "progress_electronics",
+      "kind": "internal_fit",
+      "description": "十个RGB灯与PCB、遮光隔仓和扩散窗在钟壳内，避开64×64×20.4机芯空间及原机芯轴、磁铁、滑轨。",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "hidden_usb_power",
+      "kind": "mechanical_joint",
+      "description": "5V Type-C连接从底座掏空内部插入钟体接口，电缆经底座内侧到底部出线槽，不妨碍滑轨。",
       "source": "user_requested",
       "required": true
     }
@@ -46,6 +60,18 @@
       "source": "user_requested",
       "description": "用户上传的座钟正侧面及背面图",
       "path": "product/references/uploads"
+    },
+    {
+      "id": "recovery_step",
+      "source": "existing_workspace",
+      "description": "Recover six editable parts from the last exported clock STEP",
+      "path": "manufacturing/clock/releases/export-3567c9286b70bda4189a82fb043449c1/model.step"
+    },
+    {
+      "id": "progress_reference_front",
+      "source": "user_requested",
+      "description": "白底红网格蓝字，两行五列RGB进度灯；保持原机械核心",
+      "path": "product/references/uploads/20261107T075253989Z-2-chatgpt-2026-11-6-14-42-42.png"
     }
   ],
   "assembly_story": {
@@ -61,7 +87,7 @@
     "designs": [
       {
         "role": "clock",
-        "design_id": "clock",
+        "design_id": "clock_recovered",
         "description": "Storage clock with independent bonded slides, single-pair magnetic rear cover and rectangular lower finger notch",
         "delivery_target": "printable_part",
         "required_formats": [
@@ -72,10 +98,14 @@
           "dial_nest",
           "movement",
           "battery_hatch",
-          "wall_hanger"
+          "wall_hanger",
+          "progress_electronics",
+          "hidden_usb_power"
         ],
         "reference_ids": [
-          "reference_images"
+          "reference_images",
+          "recovery_step",
+          "progress_reference_front"
         ]
       }
     ]

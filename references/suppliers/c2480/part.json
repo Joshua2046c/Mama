@@ -1,0 +1,86 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-09T20:51:39.986Z",
+  "lcsc_code": "C2480",
+  "manufacturer": "MDD(辰达半导体)",
+  "manufacturer_part_number": "SS14",
+  "description": "Diode Independent 40V 1A Surface Mount SMA(DO-214AC)",
+  "category": "肖特基二极管",
+  "package": "SMA(DO-214AC)",
+  "jlcpcb_part_class": "basic",
+  "parameters": {
+    "Operating Junction Temperature Range": "-55°C~+150°C",
+    "Voltage - DC Reverse (Vr) (Max)": "40V",
+    "Diode Configuration": "Standalone",
+    "Voltage - Forward(Vf@If)": "550mV@1A",
+    "Reverse Leakage Current (Ir)": "300uA@40V",
+    "Non-Repetitive Peak Forward Surge Current": "25A",
+    "Current - Rectified": "1A"
+  },
+  "lcsc_stock": 22401,
+  "price_breaks": [
+    {
+      "quantity": 50,
+      "unitPrice": 0.1165,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0927,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1500,
+      "unitPrice": 0.0821,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0585,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 25000,
+      "unitPrice": 0.0553,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50000,
+      "unitPrice": 0.0532,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.0193,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0154,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1500,
+      "unitPrice": 0.0136,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0097,
+      "currency": "USD"
+    },
+    {
+      "quantity": 25000,
+      "unitPrice": 0.0092,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50000,
+      "unitPrice": 0.0088,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/2857.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/9977bb85cd7e349115b7bcb7054cfa0d.pdf?productCode=C2480",
+  "datasheet_file": null
+}
